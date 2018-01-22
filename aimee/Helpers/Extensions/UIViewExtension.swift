@@ -78,6 +78,25 @@ extension UIView {
         }
     }
     
+    func transitionYAnimation(duration:Double) {
+        DispatchQueue.main.async {
+            let animation = CABasicAnimation.init(keyPath: "transform.translation.y")
+            animation.toValue = 0.0
+            animation.fromValue = SCREEN_HEIGHT
+            animation.duration = duration
+            animation.isRemovedOnCompletion = false
+            animation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
+            animation.fillMode = kCAFillModeForwards
+            self.layer.add(animation, forKey: "transitionYAnimation")
+            
+            self.alpha = 0.0
+            UIView.animate(withDuration: duration, animations: {
+                self.alpha = 1.0
+            }) { (finished) in
+            }
+        }
+    }
+    
     func addShadowWith(shadowPath:CGPath, shadowColor:CGColor, shadowOpacity:Float, shadowRadius:CGFloat, shadowOffset:CGSize) {
         layer.masksToBounds = true
         layer.shadowColor = shadowColor
