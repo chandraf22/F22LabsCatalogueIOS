@@ -65,7 +65,6 @@ class AMAuthViewController: UIViewController {
         }
         
         addDismissGesture()
-//        txtEmail.becomeFirstResponderOnLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
 
@@ -167,7 +166,6 @@ class AMAuthViewController: UIViewController {
 
 extension AMAuthViewController {
     func changeIntoSignUpMode(animated:Bool) {
-        
         var duration = 0.0
         if animated {
             duration = 0.5
@@ -414,7 +412,6 @@ extension AMAuthViewController {
     }
     
     @objc func keyboardWillChangeFrame(_ notification: Notification) {
-        
         let endFrame = ((notification as NSNotification).userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         if endFrame.origin.y != SCREEN_HEIGHT {//Keyboard present for textview
@@ -437,7 +434,6 @@ extension AMAuthViewController {
 extension AMAuthViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         if textField == txtEmail {
             txtPassword.becomeFirstResponder()
         }

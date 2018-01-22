@@ -77,7 +77,6 @@ class AMInterestsViewController: UIViewController {
 extension AMInterestsViewController {
     
     func setUpObjDataSource() {
-        
         DispatchQueue.main.async {
             self.objDataSource.removeAll()
             self.myCollectionView.reloadData()
@@ -97,7 +96,6 @@ extension AMInterestsViewController {
     }
     
     func prepareViews() {
-        
         btnBack.contentHorizontalAlignment = .left
         toggleSwitch.transform = CGAffineTransform.init(scaleX: 0.75, y: 0.75)
         
@@ -161,9 +159,7 @@ extension AMInterestsViewController {
     }
     
     func checkForMinimumInterestsSelection() {
-        
         var selectedItemsCount = 0
-        
         for obj in objDataSource {
             for item in obj.items {
                 if item.isSelected {
@@ -184,7 +180,6 @@ extension AMInterestsViewController {
             }
             btnDone.disableUserInteraction()
         }
-        
     }
 }
 
