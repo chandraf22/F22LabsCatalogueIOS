@@ -12,6 +12,7 @@ enum ScreenType {
     case kAuthType1
     case kInterestType1
     case kAccomplishmentsType1
+    case kUserDetailsEntryType1
     case none
     
     func getViewController() -> UIViewController {
@@ -22,6 +23,8 @@ enum ScreenType {
             return AMInterestsViewController()
         case .kAccomplishmentsType1:
             return AMAccomplishmentsController()
+        case .kUserDetailsEntryType1:
+            return AMUserDetailsEntryController()
         default:
             return AMAuthViewController()
         }
@@ -35,6 +38,8 @@ enum ScreenType {
             return "Type1"
         case .kAccomplishmentsType1:
             return "Type1"
+        case .kUserDetailsEntryType1:
+            return "Type1"
         default:
             return "Type1"
         }
@@ -45,7 +50,7 @@ class AMLandingViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
     
-    let dataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenType.kAuthType1]],["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]]]
+    let dataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenType.kAuthType1]],["type" : "USER DATA ENTRY PAGES","items":[ScreenType.kUserDetailsEntryType1]],["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

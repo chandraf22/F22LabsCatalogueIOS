@@ -57,6 +57,8 @@
 		6CAFBCBD2010A461005A975D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCBC2010A461005A975D /* AppConstants.swift */; };
 		6CAFBCC52010BDD9005A975D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCC42010BDD9005A975D /* UIViewControllerExtension.swift */; };
 		6CAFBCC72010D310005A975D /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCC62010D310005A975D /* UITextFieldExtension.swift */; };
+		6CCDB72D2017427600BB29D5 /* AMUserDetailsEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */; };
+		6CCDB72E2017427600BB29D5 /* AMUserDetailsEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		6CAFBCBC2010A461005A975D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		6CAFBCC42010BDD9005A975D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		6CAFBCC62010D310005A975D /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMUserDetailsEntryController.swift; sourceTree = "<group>"; };
+		6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMUserDetailsEntryController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		6CAFBC72201072D9005A975D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6CCDB72A2017426000BB29D5 /* UserDetailsEntry */,
 				6CA69EC720160B0E00926655 /* Accomplishments */,
 				6CA6862D2011C8F8004011D7 /* Interests */,
 				6CAFBC81201075B2005A975D /* Auth */,
@@ -287,6 +292,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		6CCDB72A2017426000BB29D5 /* UserDetailsEntry */ = {
+			isa = PBXGroup;
+			children = (
+				6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */,
+				6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */,
+			);
+			path = UserDetailsEntry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +382,7 @@
 				6C0A3CA42011E89A00ED5E3F /* AMInterestsSectionHeader.xib in Resources */,
 				6CAFBCB42010877E005A975D /* OpenSans-Light.ttf in Resources */,
 				6CA6862C2011C705004011D7 /* AMLandingViewCell.xib in Resources */,
+				6CCDB72E2017427600BB29D5 /* AMUserDetailsEntryController.xib in Resources */,
 				6CA69ECB20160B4D00926655 /* AMAccomplishmentsController.xib in Resources */,
 				6CAFBC92201078F1005A975D /* Montserrat-Light.otf in Resources */,
 				6CAFBC98201078F1005A975D /* Montserrat-ExtraBold.otf in Resources */,
@@ -386,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCDB72D2017427600BB29D5 /* AMUserDetailsEntryController.swift in Sources */,
 				6C0A3CA32011E89A00ED5E3F /* AMInterestsSectionHeader.swift in Sources */,
 				6CAFBCBB2010A0A3005A975D /* NSAttributtedStringExtension.swift in Sources */,
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,

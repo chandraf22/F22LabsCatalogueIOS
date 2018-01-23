@@ -16,6 +16,12 @@ enum DeviceType {
     case iPhoneX
 }
 
+enum Gender {
+    case female
+    case male
+    case notSpecified
+}
+
 let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 

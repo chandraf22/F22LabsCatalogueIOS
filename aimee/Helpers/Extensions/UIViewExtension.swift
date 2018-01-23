@@ -12,6 +12,7 @@ import UIKit
 extension UIView {
     func animateFade(duration:Double) {
         DispatchQueue.main.async {
+            self.layer.removeAllAnimations()
             let animation = CATransition()
             animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             animation.type = kCATransitionFade
