@@ -97,6 +97,9 @@ extension AMLandingViewController:UITableViewDelegate, UITableViewDataSource {
         
         let lblTitle = UILabel.init(frame: CGRect(x: 32, y: 0, width: SCREEN_WIDTH - 64, height: headerView.frame.height))
         lblTitle.font = UIFont.boldSystemFont(ofSize: 20)
+        if currentDeviceType == .iPhone5 {
+            lblTitle.font = UIFont.boldSystemFont(ofSize: 16)
+        }
         lblTitle.textColor = UIColor.black
         lblTitle.textAlignment = .left
         headerView.addSubview(lblTitle)
@@ -113,6 +116,9 @@ extension AMLandingViewController:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AMLandingViewCell.reuseIdentifier(), for: indexPath) as! AMLandingViewCell
         cell.lblTitle.text = (((dataSource[indexPath.section])["items"] as! [ScreenType])[indexPath.row]).getTitle()
+        if currentDeviceType == .iPhone5 {
+            cell.lblTitle.font = cell.lblTitle.font.withSize(16)
+        }
         return cell
     }
     

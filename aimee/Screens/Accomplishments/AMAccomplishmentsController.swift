@@ -108,11 +108,11 @@ extension AMAccomplishmentsController {
         let nib = UINib.init(nibName: AMAccomplishmentCell.reuseIdentifier(), bundle: nil)
         myCollectionView.register(nib, forCellWithReuseIdentifier: AMAccomplishmentCell.reuseIdentifier())
         
-        myCollectionView.contentInset = UIEdgeInsetsMake(0.0, SCREEN_WIDTH - 331, 0, 0.0)
+        myCollectionView.contentInset = UIEdgeInsetsMake(0.0, SCREEN_WIDTH - min(331, SCREEN_WIDTH-10), 0, 0.0)
         
         let layout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: 331, height: 224)
+        layout.itemSize = CGSize(width: min(331, SCREEN_WIDTH-10), height: 224)
         layout.sectionInset = UIEdgeInsetsMake(18, 0, 18, 0)
         layout.minimumLineSpacing = 16.0
         layout.minimumInteritemSpacing = 16.0

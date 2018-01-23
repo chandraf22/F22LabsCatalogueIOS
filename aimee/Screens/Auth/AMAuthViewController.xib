@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -297,10 +296,9 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-zi-fe2">
-                    <rect key="frame" x="32" y="59" width="25" height="25"/>
+                    <rect key="frame" x="17" y="49" width="100" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="25" id="LJ7-nH-fWm"/>
-                        <constraint firstAttribute="width" secondItem="ryW-zi-fe2" secondAttribute="height" multiplier="1:1" id="k05-d4-7rN"/>
+                        <constraint firstAttribute="width" constant="100" id="LJ7-nH-fWm"/>
                     </constraints>
                     <state key="normal" image="back"/>
                     <connections>
@@ -310,14 +308,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ryW-zi-fe2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="0zL-sg-Upb"/>
+                <constraint firstItem="ryW-zi-fe2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="0zL-sg-Upb"/>
                 <constraint firstItem="hRt-h8-seJ" firstAttribute="top" secondItem="euV-3N-wmr" secondAttribute="bottom" constant="32" id="3g6-kE-gun"/>
                 <constraint firstItem="03j-tu-3Ed" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="6EK-qq-erq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hRt-h8-seJ" secondAttribute="trailing" constant="32" id="7Wm-xj-EJx"/>
                 <constraint firstItem="euV-3N-wmr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Arp-PE-le8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uyK-S5-pyN" secondAttribute="trailing" id="B8R-ld-0gx"/>
                 <constraint firstItem="euV-3N-wmr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Cec-GN-fhc"/>
-                <constraint firstItem="03j-tu-3Ed" firstAttribute="top" secondItem="ryW-zi-fe2" secondAttribute="bottom" constant="10" id="DMo-9R-VJE"/>
+                <constraint firstItem="03j-tu-3Ed" firstAttribute="top" secondItem="ryW-zi-fe2" secondAttribute="bottom" constant="5" id="DMo-9R-VJE"/>
                 <constraint firstItem="hRt-h8-seJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="GsF-zv-VWc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DVk-hR-Uvh" secondAttribute="trailing" constant="32" id="LDV-iM-zU3"/>
                 <constraint firstItem="uyK-S5-pyN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RVl-Hw-aji"/>
@@ -325,6 +323,7 @@
                 <constraint firstItem="DVk-hR-Uvh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Vj6-uk-ybh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DVk-hR-Uvh" secondAttribute="bottom" constant="1" id="bQB-zZ-tHe"/>
                 <constraint firstItem="03j-tu-3Ed" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="d0J-Au-o1Z"/>
+                <constraint firstItem="ryW-zi-fe2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="mWs-hF-9PU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="euV-3N-wmr" secondAttribute="trailing" constant="32" id="yIM-gE-keD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -332,7 +331,7 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="85" height="85"/>
+        <image name="back" width="53" height="16"/>
         <image name="email" width="40" height="40"/>
         <image name="password" width="40" height="40"/>
         <image name="tick" width="42" height="42"/>

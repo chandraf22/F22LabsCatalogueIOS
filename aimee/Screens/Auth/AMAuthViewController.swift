@@ -260,7 +260,7 @@ extension AMAuthViewController {
         btnBack.contentHorizontalAlignment = .left
         
         if currentDeviceType == .iPhone5 {
-            lcTitleTopSpace.constant = 20.0
+            //lcTitleTopSpace.constant = 20.0
             lcContentViewHeight.constant = 250.0
             lcEmailBaseViewTopSpace.constant = 10
         }
