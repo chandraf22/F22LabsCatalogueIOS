@@ -33,6 +33,9 @@ class AMUserDetailsEntryController: UIViewController {
     let dashLayer = CAShapeLayer()
     let bgColoredLayer = CAShapeLayer()
     
+    var currentDateInDatePicker = Date()
+    var selectedDate = Date().getDatePriorBy(yearsPrior: 10)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -170,7 +173,26 @@ extension AMUserDetailsEntryController {
     }
     
     func showDateOfBirthPickerView() {
-        print("showDateOfBirthPickerView called...")
+        let alertControl = UIAlertController(title: "DATE OF BIRTH", message: "Pick a Date", preferredStyle: .alert)
+        
+        alertControl.addDatePicker(mode: .date, date: selectedDate, minimumDate: Date().getDatePriorBy(yearsPrior: 100), maximumDate: Date().getDatePriorBy(yearsPrior: 10)) { (selectedDate) in
+            self.currentDateInDatePicker = selectedDate
+        }
+        
+        let doneAction = UIAlertAction.init(title: "Done", style: .cancel) { (action) in
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "EE, dd MMMM, yyyy"
+            self.selectedDate = self.currentDateInDatePicker
+            
+            DispatchQueue.main.async {
+                self.txtDateOfBirth.animateFade(duration: 0.5)
+                self.txtDateOfBirth.text = dateFormatter.string(from: self.selectedDate)
+            }
+        }
+        
+        alertControl.addAction(doneAction)
+        alertControl.show()
     }
     
     func showImagePicker() {
