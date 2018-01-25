@@ -332,7 +332,7 @@ extension AMUserDetailsEntryController {
         
         var delay:Double = 0.0
         let delayGap:Double = 0.15
-        let duration:Double = 1.0
+        let duration:Double = animationMultiplier
         
         let alphaAnimationSettings = AlphaAnimationSettings(alphaFromValue: 0.0, alphaToValue: 1.0)
         let springAnimationSettings = SpringAnimationSettings(damping: 0.75, initialSpringVelocity: 0.75)

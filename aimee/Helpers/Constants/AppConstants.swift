@@ -32,6 +32,7 @@ enum HudBgColor {
 
 enum ScreenType {
     case kAuthType1
+    case kAuthType2
     case kInterestType1
     case kAccomplishmentsType1
     case kUserDetailsEntryType1
@@ -41,6 +42,8 @@ enum ScreenType {
         switch self {
         case .kAuthType1:
             return AMAuthViewController()
+        case .kAuthType2:
+            return PTRNLoginType3ViewController()
         case .kInterestType1:
             return AMInterestsViewController()
         case .kAccomplishmentsType1:
@@ -56,6 +59,8 @@ enum ScreenType {
         switch self {
         case .kAuthType1:
             return "Type1"
+        case .kAuthType2:
+            return "Type2"
         case .kInterestType1:
             return "Type1"
         case .kAccomplishmentsType1:
@@ -90,3 +95,5 @@ var currentDeviceType:DeviceType = {
     
     return deviceType
 }()
+
+let animationMultiplier = 1.0

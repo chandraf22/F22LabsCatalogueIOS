@@ -47,6 +47,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Black.otf</string>
+		<string>Futura PT Condensed Medium Italic.otf</string>
+		<string>Futura PT Demi.otf</string>
+		<string>Roboto-Medium.ttf</string>
 		<string>Montserrat-ExtraBold.otf</string>
 		<string>Montserrat-Bold.otf</string>
 		<string>Montserrat-Hairline.otf</string>

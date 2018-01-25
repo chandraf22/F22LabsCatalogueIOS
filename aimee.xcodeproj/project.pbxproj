@@ -13,6 +13,12 @@
 		6C0A3CA32011E89A00ED5E3F /* AMInterestsSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA12011E89A00ED5E3F /* AMInterestsSectionHeader.swift */; };
 		6C0A3CA42011E89A00ED5E3F /* AMInterestsSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA22011E89A00ED5E3F /* AMInterestsSectionHeader.xib */; };
 		6C0A3CA620120FBD00ED5E3F /* AMTagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA520120FBD00ED5E3F /* AMTagLayout.swift */; };
+		6C5663C4201A108D00BE00C6 /* PTRNLoginType3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */; };
+		6C5663C5201A108D00BE00C6 /* PTRNCustomPageControlType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */; };
+		6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */; };
+		6C5663CA201A123400BE00C6 /* Futura PT Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C7201A123300BE00C6 /* Futura PT Demi.otf */; };
+		6C5663CB201A123400BE00C6 /* Futura PT Condensed Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C8201A123300BE00C6 /* Futura PT Condensed Medium Italic.otf */; };
+		6C5663CC201A123400BE00C6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C9201A123300BE00C6 /* Roboto-Medium.ttf */; };
 		6CA6862B2011C705004011D7 /* AMLandingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA686292011C705004011D7 /* AMLandingViewCell.swift */; };
 		6CA6862C2011C705004011D7 /* AMLandingViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA6862A2011C705004011D7 /* AMLandingViewCell.xib */; };
 		6CA686302011C914004011D7 /* AMInterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA6862E2011C914004011D7 /* AMInterestsViewController.swift */; };
@@ -101,6 +107,12 @@
 		6C0A3CA12011E89A00ED5E3F /* AMInterestsSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMInterestsSectionHeader.swift; sourceTree = "<group>"; };
 		6C0A3CA22011E89A00ED5E3F /* AMInterestsSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMInterestsSectionHeader.xib; sourceTree = "<group>"; };
 		6C0A3CA520120FBD00ED5E3F /* AMTagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTagLayout.swift; sourceTree = "<group>"; };
+		6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTRNLoginType3ViewController.xib; sourceTree = "<group>"; };
+		6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNCustomPageControlType2.swift; sourceTree = "<group>"; };
+		6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNLoginType3ViewController.swift; sourceTree = "<group>"; };
+		6C5663C7201A123300BE00C6 /* Futura PT Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura PT Demi.otf"; sourceTree = "<group>"; };
+		6C5663C8201A123300BE00C6 /* Futura PT Condensed Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura PT Condensed Medium Italic.otf"; sourceTree = "<group>"; };
+		6C5663C9201A123300BE00C6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		6CA686292011C705004011D7 /* AMLandingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLandingViewCell.swift; sourceTree = "<group>"; };
 		6CA6862A2011C705004011D7 /* AMLandingViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMLandingViewCell.xib; sourceTree = "<group>"; };
 		6CA6862E2011C914004011D7 /* AMInterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMInterestsViewController.swift; sourceTree = "<group>"; };
@@ -330,6 +342,9 @@
 			children = (
 				6CAFBC82201075F8005A975D /* AMAuthViewController.swift */,
 				6CAFBC83201075F8005A975D /* AMAuthViewController.xib */,
+				6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */,
+				6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */,
+				6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -345,6 +360,9 @@
 		6CAFBC87201078E1005A975D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				6C5663C8201A123300BE00C6 /* Futura PT Condensed Medium Italic.otf */,
+				6C5663C7201A123300BE00C6 /* Futura PT Demi.otf */,
+				6C5663C9201A123300BE00C6 /* Roboto-Medium.ttf */,
 				6CAFBC8D201078F1005A975D /* Montserrat-Black.otf */,
 				6CAFBC8A201078F1005A975D /* Montserrat-Bold.otf */,
 				6CAFBC8F201078F1005A975D /* Montserrat-ExtraBold.otf */,
@@ -552,6 +570,8 @@
 				6CAFBCB22010877E005A975D /* OpenSans-BoldItalic.ttf in Resources */,
 				6CAFBC6B20107283005A975D /* LaunchScreen.storyboard in Resources */,
 				6CAFBC97201078F1005A975D /* Montserrat-UltraLight.otf in Resources */,
+				6C5663CC201A123400BE00C6 /* Roboto-Medium.ttf in Resources */,
+				6C5663CB201A123400BE00C6 /* Futura PT Condensed Medium Italic.otf in Resources */,
 				6CAFBC99201078F1005A975D /* Montserrat-Medium.otf in Resources */,
 				6CAFBC94201078F1005A975D /* Montserrat-SemiBold.otf in Resources */,
 				6CAFBCB32010877E005A975D /* OpenSans-SemiBoldItalic.ttf in Resources */,
@@ -573,9 +593,11 @@
 				6CAFBC98201078F1005A975D /* Montserrat-ExtraBold.otf in Resources */,
 				6CAFBC91201078F1005A975D /* Montserrat-Regular.otf in Resources */,
 				6CAFBCAE2010877E005A975D /* OpenSans-Italic.ttf in Resources */,
+				6C5663CA201A123400BE00C6 /* Futura PT Demi.otf in Resources */,
 				6CAFBC95201078F1005A975D /* Montserrat-Hairline.otf in Resources */,
 				6CAFBC93201078F1005A975D /* Montserrat-Bold.otf in Resources */,
 				6CAFBCAC2010877E005A975D /* OpenSans-ExtraBold.ttf in Resources */,
+				6C5663C4201A108D00BE00C6 /* PTRNLoginType3ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +676,7 @@
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,
 				6CAFBC84201075F8005A975D /* AMAuthViewController.swift in Sources */,
 				6CAFBC8020107409005A975D /* ViewController.swift in Sources */,
+				6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */,
 				6CCDB7902018982300BB29D5 /* ImagePickerViewController.swift in Sources */,
 				6CCDB7AB2018982E00BB29D5 /* String+Extensions.swift in Sources */,
 				6CCDB7942018982300BB29D5 /* TwoTextFieldsViewController.swift in Sources */,
@@ -666,6 +689,7 @@
 				6CCDB7E32019C75700BB29D5 /* UserDetails.swift in Sources */,
 				6CCDB7932018982300BB29D5 /* PickerViewViewController.swift in Sources */,
 				6CCDB7812018981A00BB29D5 /* Label.swift in Sources */,
+				6C5663C5201A108D00BE00C6 /* PTRNCustomPageControlType2.swift in Sources */,
 				6CAFBCA120107E79005A975D /* UIViewExtension.swift in Sources */,
 				6CAFBCC72010D310005A975D /* UITextFieldExtension.swift in Sources */,
 				6CA69ECA20160B4D00926655 /* AMAccomplishmentsController.swift in Sources */,

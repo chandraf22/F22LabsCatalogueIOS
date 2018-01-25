@@ -12,7 +12,7 @@ class AMLandingViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
     
-    let dataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenType.kAuthType1]],["type" : "USER DATA ENTRY PAGES","items":[ScreenType.kUserDetailsEntryType1]],["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]]]
+    let dataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenType.kAuthType1,ScreenType.kAuthType2]],["type" : "USER DATA ENTRY PAGES","items":[ScreenType.kUserDetailsEntryType1]],["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
