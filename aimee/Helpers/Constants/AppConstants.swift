@@ -22,10 +22,58 @@ enum Gender {
     case notSpecified
 }
 
+enum HudPosition {
+    case top,bottom
+}
+
+enum HudBgColor {
+    case red,blue,gray
+}
+
+enum ScreenType {
+    case kAuthType1
+    case kInterestType1
+    case kAccomplishmentsType1
+    case kUserDetailsEntryType1
+    case none
+    
+    func getViewController() -> UIViewController {
+        switch self {
+        case .kAuthType1:
+            return AMAuthViewController()
+        case .kInterestType1:
+            return AMInterestsViewController()
+        case .kAccomplishmentsType1:
+            return AMAccomplishmentsController()
+        case .kUserDetailsEntryType1:
+            return AMUserDetailsEntryController()
+        default:
+            return AMAuthViewController()
+        }
+    }
+    
+    func getTitle()->String {
+        switch self {
+        case .kAuthType1:
+            return "Type1"
+        case .kInterestType1:
+            return "Type1"
+        case .kAccomplishmentsType1:
+            return "Type1"
+        case .kUserDetailsEntryType1:
+            return "Type1"
+        default:
+            return "Type1"
+        }
+    }
+}
+
 let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 let APP_NAME = "aimee"
+
+let APP_THEME_DATEFORMAT = "EE, dd MMMM, yyyy"
 
 var currentDeviceType:DeviceType = {
     var deviceType = DeviceType.iPhone6Plus

@@ -8,44 +8,6 @@
 
 import UIKit
 
-enum ScreenType {
-    case kAuthType1
-    case kInterestType1
-    case kAccomplishmentsType1
-    case kUserDetailsEntryType1
-    case none
-    
-    func getViewController() -> UIViewController {
-        switch self {
-        case .kAuthType1:
-            return AMAuthViewController()
-        case .kInterestType1:
-            return AMInterestsViewController()
-        case .kAccomplishmentsType1:
-            return AMAccomplishmentsController()
-        case .kUserDetailsEntryType1:
-            return AMUserDetailsEntryController()
-        default:
-            return AMAuthViewController()
-        }
-    }
-    
-    func getTitle()->String {
-        switch self {
-        case .kAuthType1:
-            return "Type1"
-        case .kInterestType1:
-            return "Type1"
-        case .kAccomplishmentsType1:
-            return "Type1"
-        case .kUserDetailsEntryType1:
-            return "Type1"
-        default:
-            return "Type1"
-        }
-    }
-}
-
 class AMLandingViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!

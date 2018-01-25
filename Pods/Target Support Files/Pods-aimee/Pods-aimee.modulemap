@@ -1,0 +1,6 @@
+framework module Pods_aimee {
+  umbrella header "Pods-aimee-umbrella.h"
+
+  export *
+  module * { export * }
+}

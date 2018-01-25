@@ -18,15 +18,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMUserDetailsEntryController" customModule="aimee" customModuleProvider="target">
             <connections>
+                <outlet property="allTextFieldsBaseView" destination="PN5-46-ne1" id="Ptv-R2-cT0"/>
                 <outlet property="avatarBaseView" destination="gaf-AV-OBO" id="C4S-6f-O3z"/>
                 <outlet property="btnBack" destination="PpL-Nd-orC" id="IPy-LG-IMo"/>
                 <outlet property="btnContinue" destination="uul-cn-XkF" id="YCf-3u-xB7"/>
                 <outlet property="btnFBAcess" destination="nDH-B8-g1J" id="2z5-Ne-UJx"/>
+                <outlet property="genderSelectorBaseView" destination="G5q-xJ-Evh" id="DRH-Jv-dcs"/>
+                <outlet property="imgAvatar" destination="mAM-Ox-D6J" id="47C-8u-hTn"/>
                 <outlet property="imgCalendar" destination="cYZ-Av-Mbd" id="wbg-a4-69b"/>
                 <outlet property="lblFemale" destination="azu-DP-mWp" id="kfF-Ko-D0P"/>
                 <outlet property="lblMale" destination="zKp-KE-PEA" id="DL6-7q-vEJ"/>
                 <outlet property="lblTitle" destination="uNw-Ps-8KX" id="VQD-Cj-g92"/>
+                <outlet property="lcAlltxtBaseTopSpaceToGenderSelcView" destination="MVf-HO-M0g" id="01O-I1-lYf"/>
+                <outlet property="lcAvatartBaseTopSpaceToBtnFB" destination="EUw-6d-i2Y" id="tcY-ms-VRr"/>
                 <outlet property="lcBtnContinueBottomSpace" destination="Mr9-cZ-c9d" id="2Hs-qR-nCg"/>
+                <outlet property="lcBtnFbTopSpaceToTitle" destination="Ibw-AQ-fKZ" id="674-zr-V8A"/>
+                <outlet property="lcGenderSelectorViewTopSpaceToAvatarBase" destination="Tw7-T9-yKp" id="dJx-Ig-Yus"/>
                 <outlet property="lcTitleTopSpace" destination="cBW-O2-737" id="jIZ-wh-rqn"/>
                 <outlet property="txtDateOfBirth" destination="QQi-xI-eAG" id="LdQ-R3-H5z"/>
                 <outlet property="txtFirstName" destination="Wiw-6R-OP8" id="dTW-pL-wUQ"/>
@@ -76,7 +83,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-AV-OBO">
                     <rect key="frame" x="112" y="279" width="150" height="150"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-Ox-D6J">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-Ox-D6J">
                             <rect key="frame" x="2" y="2" width="146" height="146"/>
                         </imageView>
                     </subviews>
@@ -287,6 +294,9 @@
                     <state key="normal" title="Continue">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="didTapContinueButton:" destination="-1" eventType="touchUpInside" id="xG6-tm-rF5"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvA-dO-2nh">
                     <rect key="frame" x="112" y="279" width="150" height="150"/>
@@ -307,14 +317,14 @@
                 <constraint firstItem="pvA-dO-2nh" firstAttribute="leading" secondItem="gaf-AV-OBO" secondAttribute="leading" id="Lsy-H0-5U6"/>
                 <constraint firstItem="PN5-46-ne1" firstAttribute="top" secondItem="G5q-xJ-Evh" secondAttribute="bottom" constant="32" id="MVf-HO-M0g"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uul-cn-XkF" secondAttribute="bottom" constant="32" id="Mr9-cZ-c9d"/>
-                <constraint firstItem="uul-cn-XkF" firstAttribute="top" secondItem="PN5-46-ne1" secondAttribute="bottom" constant="61" id="NnY-eY-GAt"/>
                 <constraint firstItem="gaf-AV-OBO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PRn-on-kYE"/>
                 <constraint firstItem="G5q-xJ-Evh" firstAttribute="top" secondItem="gaf-AV-OBO" secondAttribute="bottom" constant="32" id="Tw7-T9-yKp"/>
                 <constraint firstItem="pvA-dO-2nh" firstAttribute="top" secondItem="gaf-AV-OBO" secondAttribute="top" id="UHE-In-uuO"/>
                 <constraint firstItem="uNw-Ps-8KX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="cBW-O2-737"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uNw-Ps-8KX" secondAttribute="trailing" constant="32" id="cNt-pD-7Yw"/>
                 <constraint firstItem="PN5-46-ne1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="fSb-Bz-Vkx"/>
-                <constraint firstItem="uNw-Ps-8KX" firstAttribute="top" secondItem="PpL-Nd-orC" secondAttribute="bottom" constant="5" id="l6w-tZ-Bls"/>
+                <constraint firstItem="PpL-Nd-orC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="kCX-VR-HuK"/>
+                <constraint firstItem="uNw-Ps-8KX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PpL-Nd-orC" secondAttribute="bottom" constant="5" id="l6w-tZ-Bls"/>
                 <constraint firstItem="PpL-Nd-orC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="npv-lV-Kfx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uul-cn-XkF" secondAttribute="trailing" constant="24" id="pEL-gk-gzw"/>
                 <constraint firstItem="pvA-dO-2nh" firstAttribute="bottom" secondItem="gaf-AV-OBO" secondAttribute="bottom" id="uD2-UJ-Yha"/>
