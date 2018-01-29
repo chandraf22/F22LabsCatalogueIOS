@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="AMListsType2Cell" customModule="Catalogue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjl-1U-Rla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="670"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.1176470588" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEu-pl-DVf">
+                        <rect key="frame" x="54.5" y="386.5" width="327.5" height="97"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="GAb-OO-E3L"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tincidunt justo. Suspendisse rutrum arcu ut suscipit consectetur. Ut vel diam eu urna feugiat bibendum. Integer a vestibulum nunc.</string>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <size key="shadowOffset" width="1" height="-1"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sjl-1U-Rla" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="D6T-yr-hWg"/>
+                <constraint firstAttribute="trailing" secondItem="sjl-1U-Rla" secondAttribute="trailing" id="Ld3-TA-GaU"/>
+                <constraint firstItem="zEu-pl-DVf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="100" id="QGD-3K-l5i"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zEu-pl-DVf" secondAttribute="bottom" constant="32" id="WcL-PC-9hB"/>
+                <constraint firstItem="sjl-1U-Rla" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XbJ-CO-usO"/>
+                <constraint firstAttribute="trailing" secondItem="zEu-pl-DVf" secondAttribute="trailing" constant="32" id="c0G-BB-haT"/>
+                <constraint firstItem="zEu-pl-DVf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="i3Z-qf-Er9"/>
+                <constraint firstAttribute="bottom" secondItem="sjl-1U-Rla" secondAttribute="bottom" id="jbr-rc-TYq"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="sjl-1U-Rla" id="r3T-pI-UKz"/>
+                <outlet property="lblTitle" destination="zEu-pl-DVf" id="sId-kZ-xNg"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

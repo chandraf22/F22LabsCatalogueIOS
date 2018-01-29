@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMListsType2Controller" customModule="Catalogue" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="Mzj-gZ-0yz" id="3LI-VH-VOy"/>
+                <outlet property="myCollectionView" destination="ibT-dZ-Oku" id="nb7-Qf-26Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ibT-dZ-Oku">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qfb-M3-08X">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzj-gZ-0yz">
+                    <rect key="frame" x="10" y="30" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mEL-ON-FVW"/>
+                        <constraint firstAttribute="width" constant="100" id="sAy-mG-aPO"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="back"/>
+                    <connections>
+                        <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="TPX-g7-YNn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mzj-gZ-0yz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="AlK-nR-h4n"/>
+                <constraint firstItem="ibT-dZ-Oku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GAL-90-fht"/>
+                <constraint firstItem="ibT-dZ-Oku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T56-2X-WXg"/>
+                <constraint firstAttribute="trailing" secondItem="ibT-dZ-Oku" secondAttribute="trailing" id="kTG-KJ-nQR"/>
+                <constraint firstItem="Mzj-gZ-0yz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="rFY-Ai-1PC"/>
+                <constraint firstAttribute="bottom" secondItem="ibT-dZ-Oku" secondAttribute="bottom" id="tDW-8a-d5e"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="53" height="16"/>
+    </resources>
+</document>

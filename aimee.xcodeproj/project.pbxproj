@@ -13,6 +13,14 @@
 		6C0A3CA32011E89A00ED5E3F /* AMInterestsSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA12011E89A00ED5E3F /* AMInterestsSectionHeader.swift */; };
 		6C0A3CA42011E89A00ED5E3F /* AMInterestsSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA22011E89A00ED5E3F /* AMInterestsSectionHeader.xib */; };
 		6C0A3CA620120FBD00ED5E3F /* AMTagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0A3CA520120FBD00ED5E3F /* AMTagLayout.swift */; };
+		6C157656201EF35900AE3146 /* AMListsType1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C157654201EF35900AE3146 /* AMListsType1Controller.swift */; };
+		6C157657201EF35900AE3146 /* AMListsType1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C157655201EF35900AE3146 /* AMListsType1Controller.xib */; };
+		6C15765B201EF60A00AE3146 /* AMListsType1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C157659201EF60A00AE3146 /* AMListsType1Cell.swift */; };
+		6C15765C201EF60A00AE3146 /* AMListsType1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C15765A201EF60A00AE3146 /* AMListsType1Cell.xib */; };
+		6C157660201F085600AE3146 /* AMListsType2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15765E201F085600AE3146 /* AMListsType2Cell.swift */; };
+		6C157661201F085600AE3146 /* AMListsType2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C15765F201F085600AE3146 /* AMListsType2Cell.xib */; };
+		6C157664201F086A00AE3146 /* AMListsType2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C157662201F086A00AE3146 /* AMListsType2Controller.swift */; };
+		6C157665201F086A00AE3146 /* AMListsType2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C157663201F086A00AE3146 /* AMListsType2Controller.xib */; };
 		6C5663C4201A108D00BE00C6 /* PTRNLoginType3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */; };
 		6C5663C5201A108D00BE00C6 /* PTRNCustomPageControlType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */; };
 		6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */; };
@@ -107,6 +115,14 @@
 		6C0A3CA12011E89A00ED5E3F /* AMInterestsSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMInterestsSectionHeader.swift; sourceTree = "<group>"; };
 		6C0A3CA22011E89A00ED5E3F /* AMInterestsSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMInterestsSectionHeader.xib; sourceTree = "<group>"; };
 		6C0A3CA520120FBD00ED5E3F /* AMTagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTagLayout.swift; sourceTree = "<group>"; };
+		6C157654201EF35900AE3146 /* AMListsType1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListsType1Controller.swift; sourceTree = "<group>"; };
+		6C157655201EF35900AE3146 /* AMListsType1Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType1Controller.xib; sourceTree = "<group>"; };
+		6C157659201EF60A00AE3146 /* AMListsType1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListsType1Cell.swift; sourceTree = "<group>"; };
+		6C15765A201EF60A00AE3146 /* AMListsType1Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType1Cell.xib; sourceTree = "<group>"; };
+		6C15765E201F085600AE3146 /* AMListsType2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListsType2Cell.swift; sourceTree = "<group>"; };
+		6C15765F201F085600AE3146 /* AMListsType2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType2Cell.xib; sourceTree = "<group>"; };
+		6C157662201F086A00AE3146 /* AMListsType2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListsType2Controller.swift; sourceTree = "<group>"; };
+		6C157663201F086A00AE3146 /* AMListsType2Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType2Controller.xib; sourceTree = "<group>"; };
 		6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTRNLoginType3ViewController.xib; sourceTree = "<group>"; };
 		6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNCustomPageControlType2.swift; sourceTree = "<group>"; };
 		6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNLoginType3ViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +224,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6CA6862D2011C8F8004011D7 /* Interests */ = {
+		6C15764C201EF2BF00AE3146 /* Type1 */ = {
+			isa = PBXGroup;
+			children = (
+				6CAFBC82201075F8005A975D /* AMAuthViewController.swift */,
+				6CAFBC83201075F8005A975D /* AMAuthViewController.xib */,
+			);
+			path = Type1;
+			sourceTree = "<group>";
+		};
+		6C15764E201EF2E400AE3146 /* Type2 */ = {
+			isa = PBXGroup;
+			children = (
+				6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */,
+				6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */,
+				6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */,
+			);
+			path = Type2;
+			sourceTree = "<group>";
+		};
+		6C15764F201EF2F400AE3146 /* Type1 */ = {
+			isa = PBXGroup;
+			children = (
+				6CAFBC7720107343005A975D /* AMLandingViewController.swift */,
+				6CAFBC7820107343005A975D /* AMLandingViewController.xib */,
+				6CA686292011C705004011D7 /* AMLandingViewCell.swift */,
+				6CA6862A2011C705004011D7 /* AMLandingViewCell.xib */,
+			);
+			path = Type1;
+			sourceTree = "<group>";
+		};
+		6C157650201EF2FF00AE3146 /* Type1 */ = {
 			isa = PBXGroup;
 			children = (
 				6CA6862E2011C914004011D7 /* AMInterestsViewController.swift */,
@@ -218,16 +264,72 @@
 				6C0A3CA12011E89A00ED5E3F /* AMInterestsSectionHeader.swift */,
 				6C0A3CA22011E89A00ED5E3F /* AMInterestsSectionHeader.xib */,
 			);
-			path = Interests;
+			path = Type1;
 			sourceTree = "<group>";
 		};
-		6CA69EC720160B0E00926655 /* Accomplishments */ = {
+		6C157651201EF30900AE3146 /* Type1 */ = {
 			isa = PBXGroup;
 			children = (
 				6CA69EC820160B4D00926655 /* AMAccomplishmentsController.swift */,
 				6CA69EC920160B4D00926655 /* AMAccomplishmentsController.xib */,
 				6CA69ED420161C7900926655 /* AMAccomplishmentCell.swift */,
 				6CA69ED520161C7900926655 /* AMAccomplishmentCell.xib */,
+			);
+			path = Type1;
+			sourceTree = "<group>";
+		};
+		6C157652201EF31A00AE3146 /* Type1 */ = {
+			isa = PBXGroup;
+			children = (
+				6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */,
+				6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */,
+			);
+			path = Type1;
+			sourceTree = "<group>";
+		};
+		6C157653201EF33600AE3146 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				6C15765D201F082500AE3146 /* ParallaxHorizontal */,
+				6C157658201EF36100AE3146 /* ParallaxVertical */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		6C157658201EF36100AE3146 /* ParallaxVertical */ = {
+			isa = PBXGroup;
+			children = (
+				6C157654201EF35900AE3146 /* AMListsType1Controller.swift */,
+				6C157655201EF35900AE3146 /* AMListsType1Controller.xib */,
+				6C157659201EF60A00AE3146 /* AMListsType1Cell.swift */,
+				6C15765A201EF60A00AE3146 /* AMListsType1Cell.xib */,
+			);
+			path = ParallaxVertical;
+			sourceTree = "<group>";
+		};
+		6C15765D201F082500AE3146 /* ParallaxHorizontal */ = {
+			isa = PBXGroup;
+			children = (
+				6C15765E201F085600AE3146 /* AMListsType2Cell.swift */,
+				6C15765F201F085600AE3146 /* AMListsType2Cell.xib */,
+				6C157662201F086A00AE3146 /* AMListsType2Controller.swift */,
+				6C157663201F086A00AE3146 /* AMListsType2Controller.xib */,
+			);
+			path = ParallaxHorizontal;
+			sourceTree = "<group>";
+		};
+		6CA6862D2011C8F8004011D7 /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+				6C157650201EF2FF00AE3146 /* Type1 */,
+			);
+			path = Interests;
+			sourceTree = "<group>";
+		};
+		6CA69EC720160B0E00926655 /* Accomplishments */ = {
+			isa = PBXGroup;
+			children = (
+				6C157651201EF30900AE3146 /* Type1 */,
 			);
 			path = Accomplishments;
 			sourceTree = "<group>";
@@ -268,6 +370,7 @@
 		6CAFBC72201072D9005A975D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6C157653201EF33600AE3146 /* Lists */,
 				6CCDB72A2017426000BB29D5 /* UserDetailsEntry */,
 				6CA69EC720160B0E00926655 /* Accomplishments */,
 				6CA6862D2011C8F8004011D7 /* Interests */,
@@ -320,10 +423,7 @@
 		6CAFBC762010730A005A975D /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				6CAFBC7720107343005A975D /* AMLandingViewController.swift */,
-				6CAFBC7820107343005A975D /* AMLandingViewController.xib */,
-				6CA686292011C705004011D7 /* AMLandingViewCell.swift */,
-				6CA6862A2011C705004011D7 /* AMLandingViewCell.xib */,
+				6C15764F201EF2F400AE3146 /* Type1 */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -340,11 +440,8 @@
 		6CAFBC81201075B2005A975D /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6CAFBC82201075F8005A975D /* AMAuthViewController.swift */,
-				6CAFBC83201075F8005A975D /* AMAuthViewController.xib */,
-				6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */,
-				6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */,
-				6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */,
+				6C15764C201EF2BF00AE3146 /* Type1 */,
+				6C15764E201EF2E400AE3146 /* Type2 */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -389,8 +486,7 @@
 		6CCDB72A2017426000BB29D5 /* UserDetailsEntry */ = {
 			isa = PBXGroup;
 			children = (
-				6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */,
-				6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */,
+				6C157652201EF31A00AE3146 /* Type1 */,
 			);
 			path = UserDetailsEntry;
 			sourceTree = "<group>";
@@ -578,6 +674,8 @@
 				6CA686312011C914004011D7 /* AMInterestsViewController.xib in Resources */,
 				6CA69ED720161C7900926655 /* AMAccomplishmentCell.xib in Resources */,
 				6CAFBCAD2010877E005A975D /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				6C157665201F086A00AE3146 /* AMListsType2Controller.xib in Resources */,
+				6C157657201EF35900AE3146 /* AMListsType1Controller.xib in Resources */,
 				6CAFBCAF2010877E005A975D /* OpenSans-LightItalic.ttf in Resources */,
 				6CAFBC6820107283005A975D /* Assets.xcassets in Resources */,
 				6CAFBCB02010877E005A975D /* OpenSans-Regular.ttf in Resources */,
@@ -588,6 +686,7 @@
 				6CAFBCB42010877E005A975D /* OpenSans-Light.ttf in Resources */,
 				6CA6862C2011C705004011D7 /* AMLandingViewCell.xib in Resources */,
 				6CCDB72E2017427600BB29D5 /* AMUserDetailsEntryController.xib in Resources */,
+				6C157661201F085600AE3146 /* AMListsType2Cell.xib in Resources */,
 				6CA69ECB20160B4D00926655 /* AMAccomplishmentsController.xib in Resources */,
 				6CAFBC92201078F1005A975D /* Montserrat-Light.otf in Resources */,
 				6CAFBC98201078F1005A975D /* Montserrat-ExtraBold.otf in Resources */,
@@ -596,6 +695,7 @@
 				6C5663CA201A123400BE00C6 /* Futura PT Demi.otf in Resources */,
 				6CAFBC95201078F1005A975D /* Montserrat-Hairline.otf in Resources */,
 				6CAFBC93201078F1005A975D /* Montserrat-Bold.otf in Resources */,
+				6C15765C201EF60A00AE3146 /* AMListsType1Cell.xib in Resources */,
 				6CAFBCAC2010877E005A975D /* OpenSans-ExtraBold.ttf in Resources */,
 				6C5663C4201A108D00BE00C6 /* PTRNLoginType3ViewController.xib in Resources */,
 			);
@@ -666,6 +766,7 @@
 				6CCDB7822018981A00BB29D5 /* TextField.swift in Sources */,
 				6CCDB7922018982300BB29D5 /* ColorPickerViewController.swift in Sources */,
 				6CCDB78E2018982300BB29D5 /* LocalePickerViewController.swift in Sources */,
+				6C157660201F085600AE3146 /* AMListsType2Cell.swift in Sources */,
 				6CCDB78D2018982300BB29D5 /* OneTextFieldViewController.swift in Sources */,
 				6CCDB7A52018982E00BB29D5 /* UIView+Extensions.swift in Sources */,
 				6CCDB7832018981A00BB29D5 /* GradientSlider.swift in Sources */,
@@ -675,13 +776,16 @@
 				6CCDB7E02019BA9D00BB29D5 /* UIImageView+Extension.swift in Sources */,
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,
 				6CAFBC84201075F8005A975D /* AMAuthViewController.swift in Sources */,
+				6C15765B201EF60A00AE3146 /* AMListsType1Cell.swift in Sources */,
 				6CAFBC8020107409005A975D /* ViewController.swift in Sources */,
 				6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */,
 				6CCDB7902018982300BB29D5 /* ImagePickerViewController.swift in Sources */,
 				6CCDB7AB2018982E00BB29D5 /* String+Extensions.swift in Sources */,
+				6C157656201EF35900AE3146 /* AMListsType1Controller.swift in Sources */,
 				6CCDB7942018982300BB29D5 /* TwoTextFieldsViewController.swift in Sources */,
 				6CCDB7A72018982E00BB29D5 /* Common+Extensions.swift in Sources */,
 				6CCDB7AE2018982E00BB29D5 /* UIColor+Extensions.swift in Sources */,
+				6C157664201F086A00AE3146 /* AMListsType2Controller.swift in Sources */,
 				6CAFBCBD2010A461005A975D /* AppConstants.swift in Sources */,
 				6CA686302011C914004011D7 /* AMInterestsViewController.swift in Sources */,
 				6CAFBC7920107343005A975D /* AMLandingViewController.swift in Sources */,

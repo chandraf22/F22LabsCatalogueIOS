@@ -36,6 +36,8 @@ enum ScreenType {
     case kInterestType1
     case kAccomplishmentsType1
     case kUserDetailsEntryType1
+    case kParallaxVerticalList
+    case kParallaxHorizontalList
     case none
     
     func getViewController() -> UIViewController {
@@ -50,6 +52,10 @@ enum ScreenType {
             return AMAccomplishmentsController()
         case .kUserDetailsEntryType1:
             return AMUserDetailsEntryController()
+        case .kParallaxVerticalList:
+            return AMListsType1Controller()
+        case .kParallaxHorizontalList:
+            return AMListsType2Controller()
         default:
             return AMAuthViewController()
         }
@@ -67,8 +73,21 @@ enum ScreenType {
             return "Type1"
         case .kUserDetailsEntryType1:
             return "Type1"
+        case .kParallaxVerticalList:
+            return "Parallax List Vertical"
+        case .kParallaxHorizontalList:
+            return "Parallax List Horizontal"
         default:
             return "Type1"
+        }
+    }
+    
+    func shouldHideNavBar()->Bool {
+        switch self {
+        case .kParallaxVerticalList:
+            return false
+        default:
+            return true
         }
     }
 }
@@ -97,3 +116,7 @@ var currentDeviceType:DeviceType = {
 }()
 
 let animationMultiplier = 1.0
+let PARALAX_CELL_HEIGHT:CGFloat = 260.0
+let PARALAX_IMAGE_EXTRA_HEIGHT:CGFloat = 40.0
+let PARALAX_IMAGE_EXTRA_WIDTH:CGFloat = 50.0
+let PARALAX_OFFSET_SPEED:CGFloat = 50.0

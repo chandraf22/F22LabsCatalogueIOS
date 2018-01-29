@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="AMListsType1Cell" customModule="Catalogue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4t-Ac-H6y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-g0-xK8">
+                        <rect key="frame" x="32" y="129.5" width="350" height="38.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="I4t-Ac-H6y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="16X-Er-xVf"/>
+                <constraint firstItem="cA1-g0-xK8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="1ps-64-INF"/>
+                <constraint firstItem="I4t-Ac-H6y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2mR-X2-UGw"/>
+                <constraint firstAttribute="trailing" secondItem="cA1-g0-xK8" secondAttribute="trailing" constant="32" id="Dbp-R5-fCj"/>
+                <constraint firstAttribute="bottom" secondItem="I4t-Ac-H6y" secondAttribute="bottom" id="DcB-Tt-vTT"/>
+                <constraint firstAttribute="trailing" secondItem="I4t-Ac-H6y" secondAttribute="trailing" id="Iw0-OK-JN5"/>
+                <constraint firstAttribute="bottom" secondItem="cA1-g0-xK8" secondAttribute="bottom" constant="32" id="mQk-Y1-Cfs"/>
+            </constraints>
+            <connections>
+                <outlet property="baseView" destination="I4t-Ac-H6y" id="1B1-R8-n4y"/>
+                <outlet property="lblTitle" destination="cA1-g0-xK8" id="xxd-Uw-0Fq"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
