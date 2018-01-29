@@ -60,6 +60,28 @@ extension UIView {
         }
     }
     
+    func scaleAnimation(duration:Double, scaleBy:CGFloat) {
+        DispatchQueue.main.async {
+            let animationX = CABasicAnimation.init(keyPath: "transform.scale.x")
+            animationX.toValue = scaleBy
+            animationX.duration = duration
+            animationX.isRemovedOnCompletion = false
+            animationX.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
+            animationX.fillMode = kCAFillModeForwards
+            animationX.delegate = self
+            self.layer.add(animationX, forKey: "scaleXYsXAnimation")
+            
+            let animationY = CABasicAnimation.init(keyPath: "transform.scale.y")
+            animationY.toValue = scaleBy
+            animationY.duration = duration
+            animationY.isRemovedOnCompletion = false
+            animationY.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
+            animationY.fillMode = kCAFillModeForwards
+            animationY.delegate = self
+            self.layer.add(animationY, forKey: "scaleXYsYAnimation")
+        }
+    }
+    
     func transitionXAnimation(duration:Double) {
         DispatchQueue.main.async {
             let animation = CABasicAnimation.init(keyPath: "transform.translation.x")
@@ -127,5 +149,15 @@ extension UIView {
     func makeRounded() {
         clipsToBounds = true
         layer.cornerRadius = frame.height/2
+    }
+}
+
+extension UIView:CAAnimationDelegate {
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if anim == layer.animation(forKey: "scaleXYsXAnimation") {
+            if let toValue = (anim as! CABasicAnimation).toValue {
+                self.transform = CGAffineTransform(scaleX: toValue as! CGFloat, y: toValue as! CGFloat)
+            }
+        }
     }
 }

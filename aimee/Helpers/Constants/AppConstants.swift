@@ -38,6 +38,7 @@ enum ScreenType {
     case kUserDetailsEntryType1
     case kParallaxVerticalList
     case kParallaxHorizontalList
+    case kAppDrawer
     case none
     
     func getViewController() -> UIViewController {
@@ -56,6 +57,8 @@ enum ScreenType {
             return AMListsType1Controller()
         case .kParallaxHorizontalList:
             return AMListsType2Controller()
+        case .kAppDrawer:
+            return AMAppDrawerController()
         default:
             return AMAuthViewController()
         }
@@ -77,6 +80,8 @@ enum ScreenType {
             return "Parallax List Vertical"
         case .kParallaxHorizontalList:
             return "Parallax List Horizontal"
+        case .kAppDrawer:
+            return "App Drawer"
         default:
             return "Type1"
         }
@@ -85,6 +90,8 @@ enum ScreenType {
     func shouldHideNavBar()->Bool {
         switch self {
         case .kParallaxVerticalList:
+            return false
+        case .kAppDrawer:
             return false
         default:
             return true
@@ -120,3 +127,5 @@ let PARALAX_CELL_HEIGHT:CGFloat = 260.0
 let PARALAX_IMAGE_EXTRA_HEIGHT:CGFloat = 40.0
 let PARALAX_IMAGE_EXTRA_WIDTH:CGFloat = 50.0
 let PARALAX_OFFSET_SPEED:CGFloat = 50.0
+
+let APP_DRAWER_EXITED_STATE_DURATION:Double = 5.0

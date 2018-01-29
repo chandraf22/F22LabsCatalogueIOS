@@ -16,7 +16,8 @@ class AMLandingViewController: UIViewController {
                       ["type" : "USER DATA ENTRY PAGES","items":[ScreenType.kUserDetailsEntryType1]],
                       ["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],
                       ["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]],
-                      ["type" : "LISTS PAGES","items":[ScreenType.kParallaxVerticalList, .kParallaxHorizontalList]]]
+                      ["type" : "LISTS PAGES","items":[ScreenType.kParallaxVerticalList, .kParallaxHorizontalList]],
+                      ["type" : "EVERYTHING ELSE","items":[ScreenType.kAppDrawer]]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMAppDrawerController" customModule="Catalogue" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewbase" destination="FNb-eE-ZU8" id="P1w-It-7n3"/>
+                <outlet property="myCollectionView" destination="MTL-mB-kdj" id="ogM-KI-Gbs"/>
+                <outlet property="txtEmojiView" destination="x4l-fm-apo" id="EoG-jz-uKd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNb-eE-ZU8">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MTL-mB-kdj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kcw-x8-eT7">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MTL-mB-kdj" firstAttribute="leading" secondItem="FNb-eE-ZU8" secondAttribute="leading" id="21I-Aq-R0Y"/>
+                        <constraint firstAttribute="height" constant="50" id="9XD-yP-apB"/>
+                        <constraint firstAttribute="trailing" secondItem="MTL-mB-kdj" secondAttribute="trailing" id="MQY-iX-uIR"/>
+                        <constraint firstAttribute="bottom" secondItem="MTL-mB-kdj" secondAttribute="bottom" id="jAF-Kw-xGm"/>
+                        <constraint firstItem="MTL-mB-kdj" firstAttribute="top" secondItem="FNb-eE-ZU8" secondAttribute="top" id="sCe-GE-tqg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select any emoji!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91n-ZU-McP">
+                    <rect key="frame" x="32" y="40" width="311" height="26.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="22"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4l-fm-apo">
+                    <rect key="frame" x="32" y="86.5" width="311" height="498.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FNb-eE-ZU8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Nm-rb-FhZ"/>
+                <constraint firstItem="91n-ZU-McP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="8J5-at-Zr5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FNb-eE-ZU8" secondAttribute="trailing" id="8ff-jS-mrY"/>
+                <constraint firstItem="FNb-eE-ZU8" firstAttribute="top" secondItem="x4l-fm-apo" secondAttribute="bottom" constant="32" id="A62-Pc-ySu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="91n-ZU-McP" secondAttribute="trailing" constant="32" id="Crn-Z9-SuD"/>
+                <constraint firstItem="x4l-fm-apo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="cCo-VZ-qIr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4l-fm-apo" secondAttribute="trailing" constant="32" id="hRQ-yW-JKG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FNb-eE-ZU8" secondAttribute="bottom" id="qLM-wa-oxa"/>
+                <constraint firstItem="91n-ZU-McP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="tYR-AN-E8R"/>
+                <constraint firstItem="x4l-fm-apo" firstAttribute="top" secondItem="91n-ZU-McP" secondAttribute="bottom" constant="20" id="vxN-7o-6TU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

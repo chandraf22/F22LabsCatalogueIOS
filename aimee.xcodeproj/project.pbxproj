@@ -21,6 +21,10 @@
 		6C157661201F085600AE3146 /* AMListsType2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C15765F201F085600AE3146 /* AMListsType2Cell.xib */; };
 		6C157664201F086A00AE3146 /* AMListsType2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C157662201F086A00AE3146 /* AMListsType2Controller.swift */; };
 		6C157665201F086A00AE3146 /* AMListsType2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C157663201F086A00AE3146 /* AMListsType2Controller.xib */; };
+		6C157669201F24CD00AE3146 /* AMAppDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C157667201F24CD00AE3146 /* AMAppDrawerController.swift */; };
+		6C15766A201F24CD00AE3146 /* AMAppDrawerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C157668201F24CD00AE3146 /* AMAppDrawerController.xib */; };
+		6C15766D201F250800AE3146 /* AMAppDrawerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15766B201F250800AE3146 /* AMAppDrawerCell.swift */; };
+		6C15766E201F250800AE3146 /* AMAppDrawerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C15766C201F250800AE3146 /* AMAppDrawerCell.xib */; };
 		6C5663C4201A108D00BE00C6 /* PTRNLoginType3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */; };
 		6C5663C5201A108D00BE00C6 /* PTRNCustomPageControlType2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */; };
 		6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */; };
@@ -123,6 +127,10 @@
 		6C15765F201F085600AE3146 /* AMListsType2Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType2Cell.xib; sourceTree = "<group>"; };
 		6C157662201F086A00AE3146 /* AMListsType2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListsType2Controller.swift; sourceTree = "<group>"; };
 		6C157663201F086A00AE3146 /* AMListsType2Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMListsType2Controller.xib; sourceTree = "<group>"; };
+		6C157667201F24CD00AE3146 /* AMAppDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAppDrawerController.swift; sourceTree = "<group>"; };
+		6C157668201F24CD00AE3146 /* AMAppDrawerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMAppDrawerController.xib; sourceTree = "<group>"; };
+		6C15766B201F250800AE3146 /* AMAppDrawerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMAppDrawerCell.swift; sourceTree = "<group>"; };
+		6C15766C201F250800AE3146 /* AMAppDrawerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMAppDrawerCell.xib; sourceTree = "<group>"; };
 		6C5663C1201A108C00BE00C6 /* PTRNLoginType3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTRNLoginType3ViewController.xib; sourceTree = "<group>"; };
 		6C5663C2201A108C00BE00C6 /* PTRNCustomPageControlType2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNCustomPageControlType2.swift; sourceTree = "<group>"; };
 		6C5663C3201A108D00BE00C6 /* PTRNLoginType3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTRNLoginType3ViewController.swift; sourceTree = "<group>"; };
@@ -318,6 +326,17 @@
 			path = ParallaxHorizontal;
 			sourceTree = "<group>";
 		};
+		6C157666201F249700AE3146 /* App drawer */ = {
+			isa = PBXGroup;
+			children = (
+				6C157667201F24CD00AE3146 /* AMAppDrawerController.swift */,
+				6C157668201F24CD00AE3146 /* AMAppDrawerController.xib */,
+				6C15766B201F250800AE3146 /* AMAppDrawerCell.swift */,
+				6C15766C201F250800AE3146 /* AMAppDrawerCell.xib */,
+			);
+			path = "App drawer";
+			sourceTree = "<group>";
+		};
 		6CA6862D2011C8F8004011D7 /* Interests */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +389,7 @@
 		6CAFBC72201072D9005A975D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6C157666201F249700AE3146 /* App drawer */,
 				6C157653201EF33600AE3146 /* Lists */,
 				6CCDB72A2017426000BB29D5 /* UserDetailsEntry */,
 				6CA69EC720160B0E00926655 /* Accomplishments */,
@@ -658,6 +678,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C15766E201F250800AE3146 /* AMAppDrawerCell.xib in Resources */,
 				6C0A3CA02011E53100ED5E3F /* AMInterestsCell.xib in Resources */,
 				6CAFBC85201075F8005A975D /* AMAuthViewController.xib in Resources */,
 				6CAFBC96201078F1005A975D /* Montserrat-Black.otf in Resources */,
@@ -677,6 +698,7 @@
 				6C157665201F086A00AE3146 /* AMListsType2Controller.xib in Resources */,
 				6C157657201EF35900AE3146 /* AMListsType1Controller.xib in Resources */,
 				6CAFBCAF2010877E005A975D /* OpenSans-LightItalic.ttf in Resources */,
+				6C15766A201F24CD00AE3146 /* AMAppDrawerController.xib in Resources */,
 				6CAFBC6820107283005A975D /* Assets.xcassets in Resources */,
 				6CAFBCB02010877E005A975D /* OpenSans-Regular.ttf in Resources */,
 				6CAFBC7E20107400005A975D /* Main.storyboard in Resources */,
@@ -772,6 +794,7 @@
 				6CCDB7832018981A00BB29D5 /* GradientSlider.swift in Sources */,
 				6CCDB7AC2018982E00BB29D5 /* UITextView+Extensions.swift in Sources */,
 				6CCDB7AA2018982E00BB29D5 /* Date+Extension.swift in Sources */,
+				6C157669201F24CD00AE3146 /* AMAppDrawerController.swift in Sources */,
 				6CCDB7A22018982E00BB29D5 /* UISegmentedControl+Extensions.swift in Sources */,
 				6CCDB7E02019BA9D00BB29D5 /* UIImageView+Extension.swift in Sources */,
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,
@@ -807,6 +830,7 @@
 				6CCDB7DE2019B57D00BB29D5 /* FBResponseModel.swift in Sources */,
 				6CCDB7912018982300BB29D5 /* DatePickerViewController.swift in Sources */,
 				6CCDB8072019F0C000BB29D5 /* AMAnimator.swift in Sources */,
+				6C15766D201F250800AE3146 /* AMAppDrawerCell.swift in Sources */,
 				6CCDB7A32018982E00BB29D5 /* Array+Extensions.swift in Sources */,
 				6CA6862B2011C705004011D7 /* AMLandingViewCell.swift in Sources */,
 				6CAFBC9D20107AB5005A975D /* UIColorExtension.swift in Sources */,
