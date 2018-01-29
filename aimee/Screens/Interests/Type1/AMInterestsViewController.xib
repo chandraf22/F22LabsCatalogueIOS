@@ -21,7 +21,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMInterestsViewController" customModule="aimee" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMInterestsViewController" customModule="Catalogue" customModuleProvider="target">
             <connections>
                 <outlet property="btnBack" destination="Flz-v6-JKn" id="xBY-Ql-y1S"/>
                 <outlet property="btnDone" destination="Wik-fP-hcB" id="JDN-UG-yg6"/>
@@ -32,8 +32,8 @@
                 <outlet property="lblTitle" destination="pVq-oe-deL" id="qy5-oF-qAk"/>
                 <outlet property="lblUsername" destination="zeh-Es-zgF" id="tIX-rd-ydI"/>
                 <outlet property="lcHeaderViewTopSpace" destination="VAe-ef-CKe" id="dRS-Ps-tfC"/>
+                <outlet property="lcImgUserAvatarTopSpace" destination="Cz5-Z2-vzi" id="cBD-2R-VwL"/>
                 <outlet property="myCollectionView" destination="I6j-KS-6BD" id="kcE-b7-v3g"/>
-                <outlet property="toggleSwitch" destination="7U8-rl-WJW" id="eN6-qW-H5w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,7 +42,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-7U-nod">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-KS-6BD">
+                    <rect key="frame" x="0.0" y="170" width="375" height="497"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="6vI-kj-DWs" customClass="AMTagLayout" customModule="Catalogue" customModuleProvider="target"/>
+                </collectionView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfJ-7U-nod">
                     <rect key="frame" x="0.0" y="20" width="375" height="150"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your interest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVq-oe-deL">
@@ -97,9 +102,6 @@
                                 <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="nwr-1H-ymq"/>
                             </connections>
                         </button>
-                        <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7U8-rl-WJW">
-                            <rect key="frame" x="294" y="104" width="51" height="31"/>
-                        </switch>
                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="done" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-GJ-WkF">
                             <rect key="frame" x="275" y="37" width="100" height="30"/>
                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
@@ -112,7 +114,6 @@
                         <constraint firstItem="Flz-v6-JKn" firstAttribute="top" secondItem="dfJ-7U-nod" secondAttribute="top" id="3Qk-LX-1ZF"/>
                         <constraint firstItem="mlj-Gi-OlN" firstAttribute="leading" secondItem="dfJ-7U-nod" secondAttribute="leading" constant="32" id="3Yk-Vl-x4h"/>
                         <constraint firstItem="4gf-GJ-WkF" firstAttribute="top" secondItem="Wik-fP-hcB" secondAttribute="top" id="8i4-7F-OOM"/>
-                        <constraint firstAttribute="trailing" secondItem="7U8-rl-WJW" secondAttribute="trailing" constant="32" id="AxK-ec-jBS"/>
                         <constraint firstItem="Wik-fP-hcB" firstAttribute="leading" secondItem="pVq-oe-deL" secondAttribute="trailing" constant="15" id="CAQ-PR-ijc"/>
                         <constraint firstItem="mlj-Gi-OlN" firstAttribute="top" secondItem="0tk-j1-bkc" secondAttribute="bottom" constant="3" id="Cz5-Z2-vzi"/>
                         <constraint firstItem="zeh-Es-zgF" firstAttribute="top" secondItem="mlj-Gi-OlN" secondAttribute="top" id="GJP-lq-9oZ"/>
@@ -125,22 +126,16 @@
                         <constraint firstItem="zeh-Es-zgF" firstAttribute="bottom" secondItem="mlj-Gi-OlN" secondAttribute="bottom" id="fex-D6-Trj"/>
                         <constraint firstItem="pVq-oe-deL" firstAttribute="leading" secondItem="dfJ-7U-nod" secondAttribute="leading" constant="32" id="gou-5q-Bl3"/>
                         <constraint firstAttribute="trailing" secondItem="Wik-fP-hcB" secondAttribute="trailing" id="kYC-gk-ZQ4"/>
-                        <constraint firstAttribute="height" constant="150" id="lqf-hM-t5P"/>
                         <constraint firstItem="0tk-j1-bkc" firstAttribute="leading" secondItem="pVq-oe-deL" secondAttribute="leading" id="m5R-gj-waD"/>
                         <constraint firstItem="4gf-GJ-WkF" firstAttribute="bottom" secondItem="Wik-fP-hcB" secondAttribute="bottom" id="m8h-eA-EzV"/>
                         <constraint firstItem="Flz-v6-JKn" firstAttribute="leading" secondItem="dfJ-7U-nod" secondAttribute="leading" constant="17" id="mHi-S8-Pv3"/>
                         <constraint firstItem="Wik-fP-hcB" firstAttribute="bottom" secondItem="pVq-oe-deL" secondAttribute="bottom" id="qm7-de-hcD"/>
                         <constraint firstItem="Wik-fP-hcB" firstAttribute="top" secondItem="pVq-oe-deL" secondAttribute="top" id="sVA-dI-MGc"/>
-                        <constraint firstItem="7U8-rl-WJW" firstAttribute="bottom" secondItem="mlj-Gi-OlN" secondAttribute="bottom" id="tGw-4p-7DU"/>
+                        <constraint firstAttribute="bottom" secondItem="mlj-Gi-OlN" secondAttribute="bottom" constant="15" id="xQe-bi-UNd"/>
                         <constraint firstItem="pVq-oe-deL" firstAttribute="top" secondItem="dfJ-7U-nod" secondAttribute="top" constant="37" id="yBz-Wd-kr4"/>
                         <constraint firstItem="pVq-oe-deL" firstAttribute="top" secondItem="Flz-v6-JKn" secondAttribute="bottom" id="yPZ-5m-efe"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-KS-6BD">
-                    <rect key="frame" x="0.0" y="158" width="375" height="509"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <collectionViewLayout key="collectionViewLayout" id="6vI-kj-DWs" customClass="AMTagLayout" customModule="aimee" customModuleProvider="target"/>
-                </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -148,7 +143,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I6j-KS-6BD" secondAttribute="trailing" id="DSs-1x-0G1"/>
                 <constraint firstItem="I6j-KS-6BD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LPc-2B-wRO"/>
                 <constraint firstItem="dfJ-7U-nod" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VAe-ef-CKe"/>
-                <constraint firstItem="I6j-KS-6BD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="138" id="Vuz-t3-rNL"/>
+                <constraint firstItem="I6j-KS-6BD" firstAttribute="top" secondItem="dfJ-7U-nod" secondAttribute="bottom" id="abk-xm-Y2X"/>
                 <constraint firstItem="dfJ-7U-nod" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qDL-62-JWW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I6j-KS-6BD" secondAttribute="bottom" id="ybR-te-Iwr"/>
             </constraints>

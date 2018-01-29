@@ -18,10 +18,15 @@ class AMInterestsViewController: UIViewController {
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var myCollectionView: UICollectionView!
     @IBOutlet weak var btnBack: UIButton!
-    @IBOutlet weak var toggleSwitch: UISwitch!
     @IBOutlet weak var lblBtnDoneHighlighter: UILabel!
     
     @IBOutlet weak var lcHeaderViewTopSpace: NSLayoutConstraint!
+    @IBOutlet weak var lcImgUserAvatarTopSpace: NSLayoutConstraint!
+    
+    let shapeLayer = CAShapeLayer()
+    
+    let cornerRadius:CGFloat = 24.0
+    
     
     let dataSource = [
         ["type":"animals & nature.",
@@ -97,11 +102,7 @@ extension AMInterestsViewController {
     
     func prepareViews() {
         btnBack.contentHorizontalAlignment = .left
-        toggleSwitch.transform = CGAffineTransform.init(scaleX: 0.75, y: 0.75)
         
-        let cornerRadius:CGFloat = 24.0
-        
-        let shapeLayer = CAShapeLayer()
         let shapePath = UIBezierPath.init(roundedRect: CGRect(x:0, y:0, width:SCREEN_WIDTH, height:headerView.frame.height), byRoundingCorners: [.bottomRight, .bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
         shapeLayer.path = shapePath.cgPath
         shapeLayer.fillColor = UIColor.white.cgColor
@@ -139,7 +140,7 @@ extension AMInterestsViewController {
             let sectionHeaderNib = UINib.init(nibName: AMInterestsSectionHeader.reuseIdentifier(), bundle: nil)
             self.myCollectionView.register(sectionHeaderNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: AMInterestsSectionHeader.reuseIdentifier())
             
-            self.myCollectionView.contentInset = UIEdgeInsetsMake(50.0, 32, 32, 20.0)
+            self.myCollectionView.contentInset = UIEdgeInsetsMake(0.0, 32, 32, 20.0)
             self.myCollectionView.delegate = self
             self.myCollectionView.dataSource = self
             
@@ -216,9 +217,6 @@ extension AMInterestsViewController:UICollectionViewDelegate, UICollectionViewDa
             cell.transitionXAnimation(duration: transitionAnimationDuration * Double(indexPath.section + 1))
         }
         else {
-            if toggleSwitch.isOn {
-                cell.transitionXAnimation(duration: transitionAnimationDuration/2)
-            }
         }
     }
     
@@ -227,9 +225,6 @@ extension AMInterestsViewController:UICollectionViewDelegate, UICollectionViewDa
             view.transitionXAnimation(duration: transitionAnimationDuration * Double(indexPath.section + 1))
         }
         else {
-            if toggleSwitch.isOn {
-                view.transitionXAnimation(duration: transitionAnimationDuration/2)
-            }
         }
     }
     
@@ -253,6 +248,36 @@ extension AMInterestsViewController:UICollectionViewDelegate, UICollectionViewDa
             cell.lblTitle.textColor = AMBlack
         }
         checkForMinimumInterestsSelection()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let maxValue:CGFloat = 3
+        let minValue:CGFloat = -58
+        let diff = (minValue * -1) + maxValue
+        
+        
+        if scrollView.contentOffset.y <= 0 {
+            lcImgUserAvatarTopSpace.constant = maxValue
+            lblTitle.alpha = 1.0
+            lblSubTitle.alpha = 1.0
+        }
+        else if scrollView.contentOffset.y <= diff {
+            lcImgUserAvatarTopSpace.constant = scrollView.contentOffset.y * -1
+            lblTitle.alpha = 1 - (scrollView.contentOffset.y/diff)
+            lblSubTitle.alpha = 1 - (scrollView.contentOffset.y/diff)
+        }
+        else {
+            lcImgUserAvatarTopSpace.constant = minValue
+            lblTitle.alpha = 0.0
+            lblSubTitle.alpha = 0.0
+        }
+        view.layoutIfNeeded()
+
+        let shapePath = UIBezierPath.init(roundedRect: CGRect(x:0, y:0, width:SCREEN_WIDTH, height:headerView.frame.height), byRoundingCorners: [.bottomRight, .bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        shapeLayer.path = shapePath.cgPath
+        let shadowPath = UIBezierPath.init(roundedRect: CGRect(x:0, y:30, width:SCREEN_WIDTH, height:headerView.frame.height-30), byRoundingCorners: [.bottomRight, .bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        headerView.addShadowWith(shadowPath: shadowPath.cgPath, shadowColor: UIColor.black.cgColor, shadowOpacity: 0.15, shadowRadius: 10.0, shadowOffset: CGSize(width: 0, height: 2))
     }
 }
 

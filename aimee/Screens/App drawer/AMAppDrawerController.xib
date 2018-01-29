@@ -18,6 +18,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMAppDrawerController" customModule="Catalogue" customModuleProvider="target">
             <connections>
                 <outlet property="collectionViewbase" destination="FNb-eE-ZU8" id="P1w-It-7n3"/>
+                <outlet property="lcCollectionBaseBottomSpace" destination="qLM-wa-oxa" id="Ic5-hG-HXD"/>
+                <outlet property="lcCollectionViewBaseheight" destination="9XD-yP-apB" id="1nu-pp-xxy"/>
                 <outlet property="myCollectionView" destination="MTL-mB-kdj" id="ogM-KI-Gbs"/>
                 <outlet property="txtEmojiView" destination="x4l-fm-apo" id="EoG-jz-uKd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
