@@ -26,6 +26,7 @@ class AMUserDetailsEntryController: UIViewController {
     @IBOutlet weak var imgAvatar: UIImageView!
     @IBOutlet weak var genderSelectorBaseView: UIView!
     @IBOutlet weak var allTextFieldsBaseView: UIView!
+    @IBOutlet weak var headerCoverUpView: UIView!
     
     
     @IBOutlet weak var lcTitleTopSpace: NSLayoutConstraint!
@@ -34,8 +35,7 @@ class AMUserDetailsEntryController: UIViewController {
     @IBOutlet weak var lcAvatartBaseTopSpaceToBtnFB: NSLayoutConstraint!
     @IBOutlet weak var lcGenderSelectorViewTopSpaceToAvatarBase: NSLayoutConstraint!
     @IBOutlet weak var lcAlltxtBaseTopSpaceToGenderSelcView: NSLayoutConstraint!
-    
-    
+    @IBOutlet weak var lcAvatartWidth: NSLayoutConstraint!
     
     let currentuserDetail = UserDetails()
     
@@ -112,6 +112,20 @@ extension AMUserDetailsEntryController {
         
         btnFBAcess.layer.cornerRadius = 4.0
         btnContinue.layer.cornerRadius = 4.0
+        
+        if currentDeviceType == .iPhone6 {
+            lcAvatartWidth.constant = 100.0
+        }
+        else if currentDeviceType == .iPhone5 {
+            lcAlltxtBaseTopSpaceToGenderSelcView.constant = 16.0
+            lcBtnContinueBottomSpace.constant = 16.0
+            lcBtnFbTopSpaceToTitle.constant = 20.0
+            lcAvatartBaseTopSpaceToBtnFB.constant = 20.0
+            lcGenderSelectorViewTopSpaceToAvatarBase.constant = 10.0
+            lcAvatartWidth.constant = 100.0
+        }
+        
+        view.layoutIfNeeded()
         
         setGenderLabelSelected(label: lblMale, isSelected: false)
         setGenderLabelSelected(label: lblFemale, isSelected: true)
