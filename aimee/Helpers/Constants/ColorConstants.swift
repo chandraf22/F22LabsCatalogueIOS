@@ -23,3 +23,4 @@ let AMWhite30                         = UIColor.rgb(fromHex: 0xd8d8d8).withAlpha
 let AMPerfectBlack                    = UIColor.rgb(fromHex: 0x434343)
 let AMErrorRed                        = UIColor.rgb(fromHex: 0xd92539)
 let AMLightGray                       = UIColor.rgb(fromHex: 0xc9cdd9)
+let AMWhite4                          = UIColor.rgb(fromHex: 0xd8d8d8)

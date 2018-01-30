@@ -31,6 +31,7 @@
                 <outlet property="lblSubTitle" destination="0tk-j1-bkc" id="TuH-8r-YEg"/>
                 <outlet property="lblTitle" destination="pVq-oe-deL" id="qy5-oF-qAk"/>
                 <outlet property="lblUsername" destination="zeh-Es-zgF" id="tIX-rd-ydI"/>
+                <outlet property="lcCollectionViewTopSpaceToSafeArea" destination="DVq-7f-Mje" id="Ju8-Wa-L6C"/>
                 <outlet property="lcHeaderViewTopSpace" destination="VAe-ef-CKe" id="dRS-Ps-tfC"/>
                 <outlet property="lcImgUserAvatarTopSpace" destination="Cz5-Z2-vzi" id="cBD-2R-VwL"/>
                 <outlet property="myCollectionView" destination="I6j-KS-6BD" id="kcE-b7-v3g"/>
@@ -141,9 +142,9 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dfJ-7U-nod" secondAttribute="trailing" id="0fI-IQ-lSH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I6j-KS-6BD" secondAttribute="trailing" id="DSs-1x-0G1"/>
+                <constraint firstItem="I6j-KS-6BD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="DVq-7f-Mje"/>
                 <constraint firstItem="I6j-KS-6BD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LPc-2B-wRO"/>
                 <constraint firstItem="dfJ-7U-nod" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VAe-ef-CKe"/>
-                <constraint firstItem="I6j-KS-6BD" firstAttribute="top" secondItem="dfJ-7U-nod" secondAttribute="bottom" id="abk-xm-Y2X"/>
                 <constraint firstItem="dfJ-7U-nod" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qDL-62-JWW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I6j-KS-6BD" secondAttribute="bottom" id="ybR-te-Iwr"/>
             </constraints>

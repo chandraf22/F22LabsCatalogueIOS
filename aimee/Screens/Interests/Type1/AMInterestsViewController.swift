@@ -22,6 +22,7 @@ class AMInterestsViewController: UIViewController {
     
     @IBOutlet weak var lcHeaderViewTopSpace: NSLayoutConstraint!
     @IBOutlet weak var lcImgUserAvatarTopSpace: NSLayoutConstraint!
+    @IBOutlet weak var lcCollectionViewTopSpaceToSafeArea: NSLayoutConstraint!
     
     let shapeLayer = CAShapeLayer()
     
@@ -259,16 +260,19 @@ extension AMInterestsViewController:UICollectionViewDelegate, UICollectionViewDa
         
         if scrollView.contentOffset.y <= 0 {
             lcImgUserAvatarTopSpace.constant = maxValue
+            lcCollectionViewTopSpaceToSafeArea.constant = 150
             lblTitle.alpha = 1.0
             lblSubTitle.alpha = 1.0
         }
         else if scrollView.contentOffset.y <= diff {
             lcImgUserAvatarTopSpace.constant = scrollView.contentOffset.y * -1
+            lcCollectionViewTopSpaceToSafeArea.constant = 150 - (scrollView.contentOffset.y)
             lblTitle.alpha = 1 - (scrollView.contentOffset.y/diff)
             lblSubTitle.alpha = 1 - (scrollView.contentOffset.y/diff)
         }
         else {
             lcImgUserAvatarTopSpace.constant = minValue
+            lcCollectionViewTopSpaceToSafeArea.constant  = 150 - diff
             lblTitle.alpha = 0.0
             lblSubTitle.alpha = 0.0
         }

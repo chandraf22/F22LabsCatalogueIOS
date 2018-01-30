@@ -17,4 +17,10 @@ class UserDetails: NSObject {
     var avatarURL = ""
     var email = ""
     var facebookModel:FBResponseModel?
+    
+}
+
+class ListUserData: UserDetails {
+    var connections:Int = 0
+    var isSelected = false
 }

@@ -12,13 +12,6 @@ class AMLandingViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
     
-    let dataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenType.kAuthType1,ScreenType.kAuthType2]],
-                      ["type" : "USER DATA ENTRY PAGES","items":[ScreenType.kUserDetailsEntryType1]],
-                      ["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],
-                      ["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]],
-                      ["type" : "LISTS PAGES","items":[ScreenType.kParallaxVerticalList, .kParallaxHorizontalList]],
-                      ["type" : "EVERYTHING ELSE","items":[ScreenType.kAppDrawer]]]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "ALL PAGES"
@@ -57,7 +50,7 @@ class AMLandingViewController: UIViewController {
 
 extension AMLandingViewController:UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSource.count
+        return screenTypesDataSource.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -77,18 +70,18 @@ extension AMLandingViewController:UITableViewDelegate, UITableViewDataSource {
         lblTitle.textAlignment = .left
         headerView.addSubview(lblTitle)
         
-        lblTitle.text = (dataSource[section])["type"] as? String
+        lblTitle.text = (screenTypesDataSource[section])["type"] as? String
         
         return headerView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ((dataSource[section])["items"] as! [ScreenType]).count
+        return ((screenTypesDataSource[section])["items"] as! [ScreenType]).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AMLandingViewCell.reuseIdentifier(), for: indexPath) as! AMLandingViewCell
-        cell.lblTitle.text = (((dataSource[indexPath.section])["items"] as! [ScreenType])[indexPath.row]).getTitle()
+        cell.lblTitle.text = (((screenTypesDataSource[indexPath.section])["items"] as! [ScreenType])[indexPath.row]).getTitle()
         if currentDeviceType == .iPhone5 {
             cell.lblTitle.font = cell.lblTitle.font.withSize(16)
         }
@@ -97,7 +90,7 @@ extension AMLandingViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let selectedCellType = (((dataSource[indexPath.section])["items"] as! [ScreenType])[indexPath.row])
+        let selectedCellType = (((screenTypesDataSource[indexPath.section])["items"] as! [ScreenType])[indexPath.row])
         navigationController?.isNavigationBarHidden = selectedCellType.shouldHideNavBar()
         navigationController?.pushViewController(selectedCellType.getViewController(), animated: true)
     }

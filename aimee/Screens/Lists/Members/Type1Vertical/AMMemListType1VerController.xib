@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMemListType1VerController" customModule="Catalogue" customModuleProvider="target">
+            <connections>
+                <outlet property="myCollectionView" destination="e92-tz-Od1" id="GQ5-gn-tp6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="e92-tz-Od1">
+                    <rect key="frame" x="0.0" y="93.5" width="375" height="573.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oz2-os-Hus">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcy-AL-mLv">
+                    <rect key="frame" x="24" y="36" width="161.5" height="41.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWf-Dw-qht">
+                    <rect key="frame" x="281" y="37" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="ELU-wI-0aM"/>
+                        <constraint firstAttribute="height" constant="40" id="w8S-TJ-VGR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="skip">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSkipButton:" destination="-1" eventType="touchUpInside" id="oBE-Qg-J1O"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWf-Dw-qht" secondAttribute="trailing" constant="24" id="26l-me-rsE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e92-tz-Od1" secondAttribute="trailing" id="5hG-SB-pUm"/>
+                <constraint firstItem="bWf-Dw-qht" firstAttribute="bottom" secondItem="rcy-AL-mLv" secondAttribute="bottom" id="AYu-Xi-bz2"/>
+                <constraint firstItem="rcy-AL-mLv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Cji-1m-mA7"/>
+                <constraint firstItem="bWf-Dw-qht" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rcy-AL-mLv" secondAttribute="trailing" constant="10" id="HCI-oW-WBI"/>
+                <constraint firstItem="e92-tz-Od1" firstAttribute="top" secondItem="rcy-AL-mLv" secondAttribute="bottom" constant="16" id="LgK-bh-8gl"/>
+                <constraint firstItem="e92-tz-Od1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hik-Uf-npG"/>
+                <constraint firstItem="rcy-AL-mLv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="mUI-AH-xWh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e92-tz-Od1" secondAttribute="bottom" id="tFl-5m-wJv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -75,4 +75,27 @@ extension UIViewController {
             SwiftMessages.show(config: config, view: (messageView)!)
         }
     }
+    
+    func getUserListDataSource() -> [ListUserData] {
+        let allUserImages = [#imageLiteral(resourceName: "User1"), #imageLiteral(resourceName: "User2"),#imageLiteral(resourceName: "User3"),#imageLiteral(resourceName: "User4"),#imageLiteral(resourceName: "User5"),#imageLiteral(resourceName: "User6"),#imageLiteral(resourceName: "User7"),#imageLiteral(resourceName: "User8"),#imageLiteral(resourceName: "User9"),#imageLiteral(resourceName: "User10"),#imageLiteral(resourceName: "User11"),#imageLiteral(resourceName: "User12"),#imageLiteral(resourceName: "User13"),#imageLiteral(resourceName: "User14"),#imageLiteral(resourceName: "User15"),#imageLiteral(resourceName: "User16"),#imageLiteral(resourceName: "User17"),#imageLiteral(resourceName: "User18"),#imageLiteral(resourceName: "User19"),#imageLiteral(resourceName: "User20")]
+        let allUserFirstNames = ["Sasha","Pauline","Laurie","Christy","Debbie","Constance","Ella","Stacey","Becky","Roberta",
+                                 "Freddie","Tommy","Gregory","Jeremy","Patrick","Elmer","Victor","Gary","Aiden","Lewis"]
+        let allUserLastNames = ["O'Connell","George","Duncan","Mcdonalid","Barrett","Owens","Collins","Austin","Stewart","Scott",
+                                "Brown","Spencer","Torres","Fisher","Lambert","Daniels","Nichols","Hayes","Nichols","Horton"]
+        let allUserConnectionsCount = [100,95,90,85,80,75,70,65,60,55,50,45,40,35,30,25,20,15,10,5]
+        
+        var dataSource = [ListUserData]()
+        
+        for i in 0..<allUserImages.count {
+            let user = ListUserData()
+            user.firstName = allUserFirstNames[i]
+            user.lastName = allUserLastNames[i]
+            user.avatar = allUserImages[i]
+            user.connections = allUserConnectionsCount[i]
+            
+            dataSource.append(user)
+        }
+        
+        return dataSource.shuffled
+    }
 }
