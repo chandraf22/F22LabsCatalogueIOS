@@ -53,7 +53,7 @@ extension AMMemListType1VerController {
 }
 
 
-extension AMMemListType1VerController:UICollectionViewDelegate, UICollectionViewDataSource, AMMemListType1VerCellDelegate {
+extension AMMemListType1VerController:UICollectionViewDelegate, UICollectionViewDataSource, AMMemberToggleSelectionToggleDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }

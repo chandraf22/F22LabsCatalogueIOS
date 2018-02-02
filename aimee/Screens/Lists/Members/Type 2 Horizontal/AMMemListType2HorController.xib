@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AMMemListType2HorController" customModule="Catalogue" customModuleProvider="target">
+            <connections>
+                <outlet property="suggestedMembersCollectionView" destination="Cju-xH-L1Q" id="1CL-CJ-RNN"/>
+                <outlet property="topMembersCollectionView" destination="KOl-11-eCb" id="Hev-fM-Rbp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f74-WZ-umz">
+                    <rect key="frame" x="16" y="36" width="233" height="41.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-07-d6g">
+                    <rect key="frame" x="282" y="48" width="70" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Nwu-NM-Sz6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                    <state key="normal" title="skip">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSkipButton:" destination="-1" eventType="touchUpInside" id="Id5-X5-5JN"/>
+                    </connections>
+                </button>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KOl-11-eCb">
+                    <rect key="frame" x="0.0" y="109.5" width="375" height="217"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="48d-Xc-z46" customClass="AMHorizontalCarouselLayout" customModule="Catalogue" customModuleProvider="target"/>
+                </collectionView>
+                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cju-xH-L1Q">
+                    <rect key="frame" x="0.0" y="430.5" width="375" height="216.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="14J-y8-oBz" customClass="AMHorizontalCarouselLayout" customModule="Catalogue" customModuleProvider="target"/>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zN6-88-G8e">
+                    <rect key="frame" x="16" y="358.5" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ytP-mV-lIk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cju-xH-L1Q" firstAttribute="top" secondItem="zN6-88-G8e" secondAttribute="bottom" constant="32" id="0Y2-65-3hi"/>
+                <constraint firstItem="Cju-xH-L1Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2n7-mU-PX2"/>
+                <constraint firstItem="zN6-88-G8e" firstAttribute="top" secondItem="KOl-11-eCb" secondAttribute="bottom" constant="32" id="4fv-iD-eUG"/>
+                <constraint firstItem="6R6-07-d6g" firstAttribute="bottom" secondItem="f74-WZ-umz" secondAttribute="bottom" id="7na-Gd-6FW"/>
+                <constraint firstItem="KOl-11-eCb" firstAttribute="top" secondItem="f74-WZ-umz" secondAttribute="bottom" constant="32" id="7oB-30-VDQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KOl-11-eCb" secondAttribute="trailing" id="80A-C8-lNh"/>
+                <constraint firstItem="f74-WZ-umz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KP8-zx-Zl2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6R6-07-d6g" secondAttribute="trailing" constant="23" id="O1t-yW-Q49"/>
+                <constraint firstItem="Cju-xH-L1Q" firstAttribute="height" secondItem="KOl-11-eCb" secondAttribute="height" id="TIN-MT-11c"/>
+                <constraint firstItem="KOl-11-eCb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zmf-PL-m35"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Cju-xH-L1Q" secondAttribute="bottom" constant="20" id="cTU-Mw-NLL"/>
+                <constraint firstItem="f74-WZ-umz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="dhw-dK-oiF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zN6-88-G8e" secondAttribute="trailing" constant="16" id="gXE-Uh-X0D"/>
+                <constraint firstItem="zN6-88-G8e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lKm-TO-Hpf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cju-xH-L1Q" secondAttribute="trailing" id="weT-LX-Kea"/>
+                <constraint firstItem="6R6-07-d6g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f74-WZ-umz" secondAttribute="trailing" constant="10" id="z8G-sx-iIE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

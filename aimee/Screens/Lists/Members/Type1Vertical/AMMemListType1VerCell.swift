@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol AMMemListType1VerCellDelegate:class {
-    func didToggleConnectionAt(indexPath:IndexPath)
-}
-
 class AMMemListType1VerCell: UICollectionViewCell {
 
     @IBOutlet weak var baseView: UIView!
@@ -20,7 +16,7 @@ class AMMemListType1VerCell: UICollectionViewCell {
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var lblConnections: UILabel!
     
-    weak var delegate:AMMemListType1VerCellDelegate?
+    weak var delegate:AMMemberToggleSelectionToggleDelegate?
     
     var indexPath:IndexPath?
     var isAdded = false
@@ -45,7 +41,7 @@ class AMMemListType1VerCell: UICollectionViewCell {
     }
     
     @IBAction func didTapAddButton(_ sender: Any) {
-        delegate?.didToggleConnectionAt(indexPath: indexPath!)
+        delegate?.didToggleConnectionAt!(indexPath: indexPath!)
         isAdded = !isAdded
         btnAdd.animateFade(duration: 0.5)
         setupAddButton()

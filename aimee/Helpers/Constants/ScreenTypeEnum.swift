@@ -15,7 +15,7 @@ let screenTypesDataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenTyp
                   ["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],
                   ["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]],
                   ["type" : "PARALLAX LIST PAGES","items":[ScreenType.kParallaxVerticalList, .kParallaxHorizontalList]],
-                  ["type" : "MEMBERS LIST PAGES","items":[ScreenType.kMembersListType1]],
+                  ["type" : "MEMBERS LIST PAGES","items":[ScreenType.kMembersListType1, .kMembersListType2]],
                   ["type" : "EVERYTHING ELSE","items":[ScreenType.kAppDrawer]]]
 
 
@@ -28,6 +28,7 @@ enum ScreenType {
     case kParallaxVerticalList
     case kParallaxHorizontalList
     case kMembersListType1
+    case kMembersListType2
     case kAppDrawer
     case none
     
@@ -49,6 +50,8 @@ enum ScreenType {
             return AMListsType2Controller()
         case .kMembersListType1:
             return AMMemListType1VerController()
+        case .kMembersListType2:
+            return AMMemListType2HorController()
         case .kAppDrawer:
             return AMAppDrawerController()
         default:
@@ -74,6 +77,8 @@ enum ScreenType {
             return "Parallax List Horizontal"
         case .kMembersListType1:
             return "Members List Vertical"
+        case .kMembersListType2:
+            return "Members List Horizontal"
         case .kAppDrawer:
             return "App Drawer"
         default:

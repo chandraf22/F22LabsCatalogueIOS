@@ -32,6 +32,12 @@
 		6C5663CB201A123400BE00C6 /* Futura PT Condensed Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C8201A123300BE00C6 /* Futura PT Condensed Medium Italic.otf */; };
 		6C5663CC201A123400BE00C6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C5663C9201A123300BE00C6 /* Roboto-Medium.ttf */; };
 		6C5A75672020644A009ACF2A /* Collections&SequencesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A75662020644A009ACF2A /* Collections&SequencesExtension.swift */; };
+		6C5A756B2022E290009ACF2A /* AMMemListType2HorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A75692022E290009ACF2A /* AMMemListType2HorController.swift */; };
+		6C5A756C2022E290009ACF2A /* AMMemListType2HorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A756A2022E290009ACF2A /* AMMemListType2HorController.xib */; };
+		6C5A756F2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A756D2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift */; };
+		6C5A75702022E2B0009ACF2A /* AMMemListTypw2HorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C5A756E2022E2B0009ACF2A /* AMMemListTypw2HorCell.xib */; };
+		6C5A759C20244023009ACF2A /* AMHorizontalCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A759B20244023009ACF2A /* AMHorizontalCarouselLayout.swift */; };
+		6C5A759E202444F2009ACF2A /* UniversalProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5A759D202444F2009ACF2A /* UniversalProtocols.swift */; };
 		6C9BE30420204B0900828C6E /* ScreenTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BE30320204B0900828C6E /* ScreenTypeEnum.swift */; };
 		6C9BE30B20204D2700828C6E /* AMMemListType1VerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BE30920204D2700828C6E /* AMMemListType1VerController.swift */; };
 		6C9BE30C20204D2700828C6E /* AMMemListType1VerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BE30A20204D2700828C6E /* AMMemListType1VerController.xib */; };
@@ -144,6 +150,12 @@
 		6C5663C8201A123300BE00C6 /* Futura PT Condensed Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura PT Condensed Medium Italic.otf"; sourceTree = "<group>"; };
 		6C5663C9201A123300BE00C6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		6C5A75662020644A009ACF2A /* Collections&SequencesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections&SequencesExtension.swift"; sourceTree = "<group>"; };
+		6C5A75692022E290009ACF2A /* AMMemListType2HorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMMemListType2HorController.swift; sourceTree = "<group>"; };
+		6C5A756A2022E290009ACF2A /* AMMemListType2HorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMMemListType2HorController.xib; sourceTree = "<group>"; };
+		6C5A756D2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMMemListTypw2HorCell.swift; sourceTree = "<group>"; };
+		6C5A756E2022E2B0009ACF2A /* AMMemListTypw2HorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMMemListTypw2HorCell.xib; sourceTree = "<group>"; };
+		6C5A759B20244023009ACF2A /* AMHorizontalCarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMHorizontalCarouselLayout.swift; sourceTree = "<group>"; };
+		6C5A759D202444F2009ACF2A /* UniversalProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UniversalProtocols.swift; path = aimee/Helpers/UniversalProtocols.swift; sourceTree = SOURCE_ROOT; };
 		6C9BE30320204B0900828C6E /* ScreenTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTypeEnum.swift; sourceTree = "<group>"; };
 		6C9BE30920204D2700828C6E /* AMMemListType1VerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMMemListType1VerController.swift; sourceTree = "<group>"; };
 		6C9BE30A20204D2700828C6E /* AMMemListType1VerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMMemListType1VerController.xib; sourceTree = "<group>"; };
@@ -349,6 +361,17 @@
 			path = "App drawer";
 			sourceTree = "<group>";
 		};
+		6C5A75682022E247009ACF2A /* Type 2 Horizontal */ = {
+			isa = PBXGroup;
+			children = (
+				6C5A75692022E290009ACF2A /* AMMemListType2HorController.swift */,
+				6C5A756A2022E290009ACF2A /* AMMemListType2HorController.xib */,
+				6C5A756D2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift */,
+				6C5A756E2022E2B0009ACF2A /* AMMemListTypw2HorCell.xib */,
+			);
+			path = "Type 2 Horizontal";
+			sourceTree = "<group>";
+		};
 		6C9BE30620204CC400828C6E /* Parallax */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +384,7 @@
 		6C9BE30720204CD000828C6E /* Members */ = {
 			isa = PBXGroup;
 			children = (
+				6C5A75682022E247009ACF2A /* Type 2 Horizontal */,
 				6C9BE30820204CD700828C6E /* Type1Vertical */,
 			);
 			path = Members;
@@ -451,6 +475,7 @@
 				6CAFBC74201072F2005A975D /* Extensions */,
 				6CAFBCB620108879005A975D /* Utilities.swift */,
 				6CCDB8062019F0C000BB29D5 /* AMAnimator.swift */,
+				6C5A759D202444F2009ACF2A /* UniversalProtocols.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -564,6 +589,7 @@
 		6CCDB7712018777400BB29D5 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C5A759B20244023009ACF2A /* AMHorizontalCarouselLayout.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -744,6 +770,7 @@
 				6C15766A201F24CD00AE3146 /* AMAppDrawerController.xib in Resources */,
 				6CAFBC6820107283005A975D /* Assets.xcassets in Resources */,
 				6CAFBCB02010877E005A975D /* OpenSans-Regular.ttf in Resources */,
+				6C5A756C2022E290009ACF2A /* AMMemListType2HorController.xib in Resources */,
 				6C9BE30C20204D2700828C6E /* AMMemListType1VerController.xib in Resources */,
 				6CAFBC7E20107400005A975D /* Main.storyboard in Resources */,
 				6CCDB78F2018982300BB29D5 /* Countries.bundle in Resources */,
@@ -757,6 +784,7 @@
 				6CAFBC92201078F1005A975D /* Montserrat-Light.otf in Resources */,
 				6CAFBC98201078F1005A975D /* Montserrat-ExtraBold.otf in Resources */,
 				6CAFBC91201078F1005A975D /* Montserrat-Regular.otf in Resources */,
+				6C5A75702022E2B0009ACF2A /* AMMemListTypw2HorCell.xib in Resources */,
 				6CAFBCAE2010877E005A975D /* OpenSans-Italic.ttf in Resources */,
 				6C5663CA201A123400BE00C6 /* Futura PT Demi.otf in Resources */,
 				6CAFBC95201078F1005A975D /* Montserrat-Hairline.otf in Resources */,
@@ -828,6 +856,7 @@
 				6C5A75672020644A009ACF2A /* Collections&SequencesExtension.swift in Sources */,
 				6CCDB7DC2019B00900BB29D5 /* FacebookHelper.swift in Sources */,
 				6C0A3CA32011E89A00ED5E3F /* AMInterestsSectionHeader.swift in Sources */,
+				6C5A759E202444F2009ACF2A /* UniversalProtocols.swift in Sources */,
 				6CAFBCBB2010A0A3005A975D /* NSAttributtedStringExtension.swift in Sources */,
 				6CCDB7A92018982E00BB29D5 /* UITextField+Extensions.swift in Sources */,
 				6CCDB7A62018982E00BB29D5 /* Optional+Extensions.swift in Sources */,
@@ -846,6 +875,7 @@
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,
 				6CAFBC84201075F8005A975D /* AMAuthViewController.swift in Sources */,
 				6C15765B201EF60A00AE3146 /* AMListsType1Cell.swift in Sources */,
+				6C5A756F2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift in Sources */,
 				6CAFBC8020107409005A975D /* ViewController.swift in Sources */,
 				6C5663C6201A108D00BE00C6 /* PTRNLoginType3ViewController.swift in Sources */,
 				6CCDB7902018982300BB29D5 /* ImagePickerViewController.swift in Sources */,
@@ -857,6 +887,7 @@
 				6C9BE30420204B0900828C6E /* ScreenTypeEnum.swift in Sources */,
 				6C157664201F086A00AE3146 /* AMListsType2Controller.swift in Sources */,
 				6CAFBCBD2010A461005A975D /* AppConstants.swift in Sources */,
+				6C5A759C20244023009ACF2A /* AMHorizontalCarouselLayout.swift in Sources */,
 				6CA686302011C914004011D7 /* AMInterestsViewController.swift in Sources */,
 				6CAFBC7920107343005A975D /* AMLandingViewController.swift in Sources */,
 				6CAFBC9B20107AA6005A975D /* ColorConstants.swift in Sources */,
@@ -872,6 +903,7 @@
 				6CAFBCC52010BDD9005A975D /* UIViewControllerExtension.swift in Sources */,
 				6CCDB7A82018982E00BB29D5 /* Locale+Extensions.swift in Sources */,
 				6CAFBCB720108879005A975D /* Utilities.swift in Sources */,
+				6C5A756B2022E290009ACF2A /* AMMemListType2HorController.swift in Sources */,
 				6CAFBCB920109C97005A975D /* UILabelExtension.swift in Sources */,
 				6C0A3CA620120FBD00ED5E3F /* AMTagLayout.swift in Sources */,
 				6CCDB7842018981A00BB29D5 /* SegmentedControl.swift in Sources */,

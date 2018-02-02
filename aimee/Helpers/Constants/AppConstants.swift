@@ -37,6 +37,9 @@ let APP_NAME = "aimee"
 
 let APP_THEME_DATEFORMAT = "EE, dd MMMM, yyyy"
 
+let YES = true
+let NO = false
+
 var currentDeviceType:DeviceType = {
     var deviceType = DeviceType.iPhone6Plus
     
