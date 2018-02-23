@@ -51,7 +51,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMZ-76-y3S">
                                 <rect key="frame" x="0.0" y="105.5" width="166" height="53"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-Fu-2Dh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vc-Fu-2Dh">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="yag-Ok-mfE"/>
@@ -60,7 +60,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLQ-2b-kac">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLQ-2b-kac">
                                         <rect key="frame" x="0.0" y="28" width="166" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="vdf-dp-J56"/>
@@ -133,6 +133,7 @@
                 <outlet property="imgAvatar" destination="A0U-Lj-3jt" id="DhK-r5-28g"/>
                 <outlet property="lblUserConnections" destination="KLQ-2b-kac" id="xFv-QH-3PA"/>
                 <outlet property="lblUsername" destination="2vc-Fu-2Dh" id="Nd9-Z3-Q3F"/>
+                <outlet property="lcBtnAddFriendwidth" destination="Nl0-Hk-xDJ" id="9Nj-2z-8pm"/>
                 <outlet property="lcImageViewWidth" destination="emh-1J-hbu" id="feh-q3-r6d"/>
                 <outlet property="lcLabelsBaseViewCenterY" destination="mPb-hQ-XBv" id="nks-vX-5Za"/>
             </connections>

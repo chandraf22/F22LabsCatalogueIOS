@@ -25,6 +25,7 @@ class AMMemListTypw2HorCell: UICollectionViewCell {
     
     @IBOutlet weak var lcImageViewWidth: NSLayoutConstraint!
     @IBOutlet weak var lcLabelsBaseViewCenterY: NSLayoutConstraint!//original value = 10
+    @IBOutlet weak var lcBtnAddFriendwidth: NSLayoutConstraint!
     
     class func reuseIdentifier()->String {
         return "AMMemListTypw2HorCell"
@@ -35,6 +36,14 @@ class AMMemListTypw2HorCell: UICollectionViewCell {
     }
     
     func prepareViewWith(userData:ListUserData) {
+        
+        if currentDeviceType == .iPhone5 {
+            lcImageViewWidth.constant = 50.0
+            lcBtnAddFriendwidth.constant = 30.0
+        }
+        layoutIfNeeded()
+        
+        
         isAdded = userData.isSelected
         baseView.layer.cornerRadius = 6.0
         baseView.clipsToBounds = true

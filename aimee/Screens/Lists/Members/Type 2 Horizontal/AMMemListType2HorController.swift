@@ -38,7 +38,7 @@ extension AMMemListType2HorController {
     
     func getItemSize()->CGSize {
         var itemSize = CGSize(width: 166, height: 244)
-        if currentDeviceType == .iPhoneX {
+        if currentDeviceType == .iPhoneX || currentDeviceType == .iPhone6Plus {
             return itemSize
         }
         

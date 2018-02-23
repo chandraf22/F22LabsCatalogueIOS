@@ -24,4 +24,8 @@ extension Date {
         // max date
         return (calendar as NSCalendar).date(byAdding: components, to: self, options: []) ?? newDate
     }
+    
+    func getAgeFromDate()->Int {
+        return 10
+    }
 }

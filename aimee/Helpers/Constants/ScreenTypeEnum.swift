@@ -30,6 +30,7 @@ enum ScreenType {
     case kMembersListType1
     case kMembersListType2
     case kAppDrawer
+    case kMyProfileType1
     case none
     
     func getViewController() -> UIViewController {
@@ -54,6 +55,8 @@ enum ScreenType {
             return AMMemListType2HorController()
         case .kAppDrawer:
             return AMAppDrawerController()
+        case .kMyProfileType1:
+            return AMMyProfileType1Controller()
         default:
             return AMAuthViewController()
         }
@@ -81,6 +84,8 @@ enum ScreenType {
             return "Members List Horizontal"
         case .kAppDrawer:
             return "App Drawer"
+        case .kMyProfileType1:
+            return "My Profile Type 1"
         default:
             return "Type1"
         }
