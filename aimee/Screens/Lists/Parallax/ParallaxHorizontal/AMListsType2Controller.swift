@@ -1,6 +1,6 @@
 //
 //  AMListsType2Controller.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 29/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.

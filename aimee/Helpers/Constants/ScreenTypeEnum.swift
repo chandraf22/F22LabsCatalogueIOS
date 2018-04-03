@@ -1,6 +1,6 @@
 //
 //  ScreenTypeEnum.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 30/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.
@@ -15,8 +15,7 @@ let screenTypesDataSource = [["type" : "AUTHENTICATION PAGES","items":[ScreenTyp
                   ["type" : "INTEREST SELECTION PAGES","items":[ScreenType.kInterestType1]],
                   ["type" : "ACCOMPLISHMENTS PAGES","items":[ScreenType.kAccomplishmentsType1]],
                   ["type" : "PARALLAX LIST PAGES","items":[ScreenType.kParallaxVerticalList, .kParallaxHorizontalList]],
-                  ["type" : "MEMBERS LIST PAGES","items":[ScreenType.kMembersListType1, .kMembersListType2]],
-                  ["type" : "EVERYTHING ELSE","items":[ScreenType.kAppDrawer]]]
+                  ["type" : "LIST PAGES","items":[ScreenType.kMembersListType1, .kMembersListType2, .kMembersListType3]]]
 
 
 enum ScreenType {
@@ -29,8 +28,9 @@ enum ScreenType {
     case kParallaxHorizontalList
     case kMembersListType1
     case kMembersListType2
+    case kMembersListType3
     case kAppDrawer
-    case kMyProfileType1
+    case kTextAnimation
     case none
     
     func getViewController() -> UIViewController {
@@ -53,10 +53,12 @@ enum ScreenType {
             return AMMemListType1VerController()
         case .kMembersListType2:
             return AMMemListType2HorController()
+        case .kMembersListType3:
+            return AMMusicListVerticalController()
         case .kAppDrawer:
             return AMAppDrawerController()
-        case .kMyProfileType1:
-            return AMMyProfileType1Controller()
+        case .kTextAnimation:
+            return AMTextAnimationController()
         default:
             return AMAuthViewController()
         }
@@ -82,10 +84,12 @@ enum ScreenType {
             return "Members List Vertical"
         case .kMembersListType2:
             return "Members List Horizontal"
+        case .kMembersListType3:
+            return "Music list"
         case .kAppDrawer:
             return "App Drawer"
-        case .kMyProfileType1:
-            return "My Profile Type 1"
+        case .kTextAnimation:
+            return "Text Animations"
         default:
             return "Type1"
         }

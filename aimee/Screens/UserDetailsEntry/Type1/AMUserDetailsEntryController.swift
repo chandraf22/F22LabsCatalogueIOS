@@ -1,6 +1,6 @@
 //
 //  AMUserDetailsEntryController.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 23/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.
@@ -247,8 +247,7 @@ extension AMUserDetailsEntryController {
         fusumaBackgroundColor = UIColor.white
         fusumaTitleFont = Utilities.appThemeFont(size: 18)
         
-        fusuma.defaultMode = .library
-        fusuma.hasVideo = false //To allow for video capturing with .library and .camera available by default
+        fusuma.availableModes = [.library]
         fusuma.cropHeightRatio = 1 // Height-to-width ratio. The default value is 1, which means a squared-size photo.
         fusuma.allowMultipleSelection = false // You can select multiple photos from the camera roll. The default value is false.
         

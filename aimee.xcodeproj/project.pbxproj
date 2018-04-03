@@ -113,6 +113,10 @@
 		6CAFBCBD2010A461005A975D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCBC2010A461005A975D /* AppConstants.swift */; };
 		6CAFBCC52010BDD9005A975D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCC42010BDD9005A975D /* UIViewControllerExtension.swift */; };
 		6CAFBCC72010D310005A975D /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAFBCC62010D310005A975D /* UITextFieldExtension.swift */; };
+		6CC7000D203FEB08009A3F2F /* AMTextAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7000B203FEB08009A3F2F /* AMTextAnimationController.swift */; };
+		6CC7000E203FEB08009A3F2F /* AMTextAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC7000C203FEB08009A3F2F /* AMTextAnimationController.xib */; };
+		6CC7001220401B8B009A3F2F /* AMMusicListVerticalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC7001020401B8B009A3F2F /* AMMusicListVerticalController.swift */; };
+		6CC7001320401B8B009A3F2F /* AMMusicListVerticalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC7001120401B8B009A3F2F /* AMMusicListVerticalController.xib */; };
 		6CCDB72D2017427600BB29D5 /* AMUserDetailsEntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */; };
 		6CCDB72E2017427600BB29D5 /* AMUserDetailsEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */; };
 		6CCDB7B020189A7400BB29D5 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDB7AF20189A7400BB29D5 /* DateExtension.swift */; };
@@ -233,6 +237,10 @@
 		6CAFBCBC2010A461005A975D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		6CAFBCC42010BDD9005A975D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		6CAFBCC62010D310005A975D /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		6CC7000B203FEB08009A3F2F /* AMTextAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTextAnimationController.swift; sourceTree = "<group>"; };
+		6CC7000C203FEB08009A3F2F /* AMTextAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMTextAnimationController.xib; sourceTree = "<group>"; };
+		6CC7001020401B8B009A3F2F /* AMMusicListVerticalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMMusicListVerticalController.swift; sourceTree = "<group>"; };
+		6CC7001120401B8B009A3F2F /* AMMusicListVerticalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMMusicListVerticalController.xib; sourceTree = "<group>"; };
 		6CCDB72B2017427600BB29D5 /* AMUserDetailsEntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMUserDetailsEntryController.swift; sourceTree = "<group>"; };
 		6CCDB72C2017427600BB29D5 /* AMUserDetailsEntryController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMUserDetailsEntryController.xib; sourceTree = "<group>"; };
 		6CCDB7AF20189A7400BB29D5 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -329,6 +337,7 @@
 		6C157653201EF33600AE3146 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				6CC7000F20401B74009A3F2F /* Music */,
 				6C9BE30720204CD000828C6E /* Members */,
 				6C9BE30620204CC400828C6E /* Parallax */,
 			);
@@ -524,6 +533,7 @@
 		6CAFBC72201072D9005A975D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6CC7000A203FEAB9009A3F2F /* TextAnimations */,
 				6C0AA2EB202888DC00AAACE7 /* Profile */,
 				6C157666201F249700AE3146 /* App drawer */,
 				6C157653201EF33600AE3146 /* Lists */,
@@ -640,6 +650,24 @@
 				6CAFBCA92010877E005A975D /* OpenSans-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6CC7000A203FEAB9009A3F2F /* TextAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				6CC7000B203FEB08009A3F2F /* AMTextAnimationController.swift */,
+				6CC7000C203FEB08009A3F2F /* AMTextAnimationController.xib */,
+			);
+			path = TextAnimations;
+			sourceTree = "<group>";
+		};
+		6CC7000F20401B74009A3F2F /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				6CC7001020401B8B009A3F2F /* AMMusicListVerticalController.swift */,
+				6CC7001120401B8B009A3F2F /* AMMusicListVerticalController.xib */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		6CCDB72A2017426000BB29D5 /* UserDetailsEntry */ = {
@@ -785,6 +813,8 @@
 				6CAFBCAF2010877E005A975D /* OpenSans-LightItalic.ttf in Resources */,
 				6C15766A201F24CD00AE3146 /* AMAppDrawerController.xib in Resources */,
 				6CAFBC6820107283005A975D /* Assets.xcassets in Resources */,
+				6CC7000E203FEB08009A3F2F /* AMTextAnimationController.xib in Resources */,
+				6CC7001320401B8B009A3F2F /* AMMusicListVerticalController.xib in Resources */,
 				6CAFBCB02010877E005A975D /* OpenSans-Regular.ttf in Resources */,
 				6C5A756C2022E290009ACF2A /* AMMemListType2HorController.xib in Resources */,
 				6C9BE30C20204D2700828C6E /* AMMemListType1VerController.xib in Resources */,
@@ -819,9 +849,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-aimee/Pods-aimee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/Fusuma/Fusuma.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZCAnimatedLabel/ZCAnimatedLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fusuma.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZCAnimatedLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -834,13 +885,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aimee-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4A6ED09C46563B2BEC14C60 /* [CP] Copy Pods Resources */ = {
@@ -888,6 +942,7 @@
 				6CCDB7E02019BA9D00BB29D5 /* UIImageView+Extension.swift in Sources */,
 				6CA69ED620161C7900926655 /* AMAccomplishmentCell.swift in Sources */,
 				6CAFBC84201075F8005A975D /* AMAuthViewController.swift in Sources */,
+				6CC7000D203FEB08009A3F2F /* AMTextAnimationController.swift in Sources */,
 				6C15765B201EF60A00AE3146 /* AMListsType1Cell.swift in Sources */,
 				6C5A756F2022E2B0009ACF2A /* AMMemListTypw2HorCell.swift in Sources */,
 				6C4EAD84203EE68B00080A17 /* Optional+Extensions.swift in Sources */,
@@ -923,6 +978,7 @@
 				6CAFBCB920109C97005A975D /* UILabelExtension.swift in Sources */,
 				6C0A3CA620120FBD00ED5E3F /* AMTagLayout.swift in Sources */,
 				6C4EAD65203EE67000080A17 /* TextField.swift in Sources */,
+				6CC7001220401B8B009A3F2F /* AMMusicListVerticalController.swift in Sources */,
 				6C4EAD7A203EE68B00080A17 /* Locale+Extensions.swift in Sources */,
 				6CCDB7DE2019B57D00BB29D5 /* FBResponseModel.swift in Sources */,
 				6C4EAD7E203EE68B00080A17 /* UIView+Extensions.swift in Sources */,

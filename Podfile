@@ -11,6 +11,8 @@ target 'aimee' do
 pod 'Fusuma'
 pod 'SwiftMessages'
 pod 'SDWebImage', '~>3.7'
+pod 'ZCAnimatedLabel'
+#pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 
 
 #For Facebook

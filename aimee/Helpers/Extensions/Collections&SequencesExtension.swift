@@ -1,6 +1,6 @@
 //
 //  Collections&SequencesExtension.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 30/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.

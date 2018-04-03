@@ -1,6 +1,6 @@
 //
 //  AMAuthViewController.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 18/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.
@@ -192,8 +192,8 @@ extension AMAuthViewController {
         infoAttrStr.addAttribute(.font, value: Utilities.subtitleFontType2(size: 12.0), range: infoStrPart4Range)
         infoAttrStr.addAttribute(.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: infoStrPart2Range)
         infoAttrStr.addAttribute(.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: infoStrPart4Range)
-        infoAttrStr.addAttribute(.link, value: URL.init(string: "https://www.google.com") as Any, range: infoStrPart2Range)
-        infoAttrStr.addAttribute(.link, value: URL.init(string: "https://www.facebook.com") as Any, range: infoStrPart4Range)
+        infoAttrStr.addAttribute(.link, value: URL.init(string: "http://f22labs.com/") as Any, range: infoStrPart2Range)
+        infoAttrStr.addAttribute(.link, value: URL.init(string: "http://f22labs.com/") as Any, range: infoStrPart4Range)
         infoAttrStr.addAttribute(.foregroundColor, value: UIColor.black, range: infoStrPart2Range)
         infoAttrStr.addAttribute(.foregroundColor, value: UIColor.black, range: infoStrPart4Range)
         infoAttrStr.addParagraphLineSpacing(space: 7.0, alignment: .center)
@@ -226,7 +226,7 @@ extension AMAuthViewController {
         authInfoBase.animateFade(duration: duration)
         
         subContentBaseView.animateFade(duration: duration)
-        btnForgotPassword.isHidden = false
+        btnForgotPassword.isHidden = true
         
         signupSubContentView.isHidden = true
         btnAuth.setTitle("Sign In", for: .normal)
@@ -459,30 +459,3 @@ extension AMAuthViewController: UITextFieldDelegate {
         return true
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

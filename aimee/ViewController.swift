@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 18/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.
@@ -19,7 +19,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

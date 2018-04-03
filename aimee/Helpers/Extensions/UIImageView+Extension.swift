@@ -1,6 +1,6 @@
 //
 //  UIImageView+Extension.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 25/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.

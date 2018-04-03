@@ -1,6 +1,6 @@
 //
 //  AMInterestsViewController.swift
-//  aimee
+//  Catalogue
 //
 //  Created by Chandrachudh on 19/01/18.
 //  Copyright © 2018 F22Labs. All rights reserved.
@@ -141,7 +141,7 @@ extension AMInterestsViewController {
             let sectionHeaderNib = UINib.init(nibName: AMInterestsSectionHeader.reuseIdentifier(), bundle: nil)
             self.myCollectionView.register(sectionHeaderNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: AMInterestsSectionHeader.reuseIdentifier())
             
-            self.myCollectionView.contentInset = UIEdgeInsetsMake(0.0, 32, 32, 20.0)
+            self.myCollectionView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
             self.myCollectionView.delegate = self
             self.myCollectionView.dataSource = self
             
